@@ -24,14 +24,19 @@
                             target.style.borderRadius = radius.getPropertyValue('border-radius');
                             const navItems = element.querySelectorAll(".nav-item");
                             for (let i = 0; i < navItems.length; i++) {
-                                navItems[i].classList.remove("active");
+                                if (navItems[i] && navItems[i].classList) {
+                                    navItems[i].classList.remove("active");
+                                }
                             }
-                            activeLink.parentNode.classList.add("active");
+                            if (activeLink.parentNode && activeLink.parentNode.classList) {
+                                activeLink.parentNode.classList.add("active");
+                            }
                         }
                     }
                 }
 
                 function mouseenterFunc() {
+                    if (!target) return;
                     const width = this.offsetWidth;
                     const height = this.offsetHeight;
                     const left = this.offsetLeft;
@@ -43,9 +48,9 @@
                     target.style.top = `${top}px`;
                     target.style.transform = "none";
                     target.style.borderRadius = radius.getPropertyValue('border-radius');
-                    if (!this.parentNode.classList.contains("active")) {
+                    if (this.parentNode && this.parentNode.classList && !this.parentNode.classList.contains("active")) {
                         for (let i = 0; i < links.length; i++) {
-                            if (links[i].parentNode.classList.contains("active")) {
+                            if (links[i] && links[i].parentNode && links[i].parentNode.classList && links[i].parentNode.classList.contains("active")) {
                                 links[i].parentNode.classList.remove("active");
                             }
                         }

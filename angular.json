@@ -21,6 +21,11 @@
             "assets": [
               {
                 "glob": "**/*",
+                "input": "assets",
+                "output": "/assets"
+              },
+              {
+                "glob": "**/*",
                 "input": "public"
               }
             ],
@@ -29,6 +34,7 @@
             ],
             "scripts": [
               "assets/js/vendors/jquery.min.js",
+              "assets/js/vendors/bootstrap-safe.js",
               "assets/js/vendors/bootstrap.min.js",
               "assets/js/vendors/swiper-bundle.min.js",
               "assets/js/vendors/aos.min.js",
@@ -98,6 +104,11 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
+              {
+                "glob": "**/*",
+                "input": "assets",
+                "output": "/assets"
+              },
               {
                 "glob": "**/*",
                 "input": "public"

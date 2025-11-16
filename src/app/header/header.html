@@ -40,110 +40,48 @@
                     <div class="collapse navbar-collapse">
                         <ul id="mainMenu" class="navbar-nav mobile-item mx-auto">
                             <li class="nav-item">
-                                <a href="#home" class="nav-link toggle">Home <i class="fal fa-plus"></i></a>
-                                <ul class="menu-dropdown">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="index.html">Home Demo 1</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="index-2.html">Home Demo 2</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="index-3.html">Home Demo 3</a>
-                                    </li>
-                                </ul>
+                                <a [routerLink]="['/']" fragment="home" class="nav-link toggle">Início </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link toggle" href="#services">Services<i class="fal fa-plus"></i></a>
-                                <ul class="menu-dropdown">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="services.html">Services</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="service-details.html">Service Details</a>
-                                    </li>
-                                </ul>
+                                <a class="nav-link toggle" [routerLink]="['/']" fragment="services">Serviços</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link toggle" href="#vendors">Vendors<i class="fal fa-plus"></i></a>
-                                <ul class="menu-dropdown">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="vendors.html">Vendors</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="vendor-details.html">Vendor Details</a>
-                                    </li>
-                                </ul>
+                                <a class="nav-link toggle" [routerLink]="['/']" fragment="vendors">Fornecedores</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link toggle" href="#pages">Pages<i class="fal fa-plus"></i></a>
+                                <a class="nav-link toggle" href="javaScript:void(0)">Minha Conta<i class="fal fa-plus"></i></a>
                                 <ul class="menu-dropdown">
                                     <li class="nav-item">
-                                        <a class="nav-link toggle" href="javaScript:void(0)">My Account<i class="fal fa-plus"></i></a>
-                                        <ul class="menu-dropdown">
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="dashboard.html">Dashboard</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="order.html">Order List</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="order-details.html">Order Details</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="profile.html">Profile</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="login.html">Login</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="signup.html">Signup</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="reset-password.html">Reset Password</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="forgot-password.html">Forgot Password</a>
-                                            </li>
-                                        </ul>
+                                        <a class="nav-link" href="dashboard.html">Painel</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="wishlist.html">Wishlist</a>
+                                        <a class="nav-link" href="order.html">Lista de Pedidos</a>
                                     </li>
-
                                     <li class="nav-item">
-                                        <a class="nav-link" href="checkout.html">Checkout</a>
+                                        <a class="nav-link" href="order-details.html">Detalhes do Pedido</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="profile.html">Perfil</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="login.html">Entrar</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="signup.html">Registrar</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="reset-password.html">Redefinir Senha</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="forgot-password.html">Esqueci a Senha</a>
                                     </li>
                                 </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link toggle" href="#blogs">Blog<i class="fal fa-plus"></i></a>
-                                <ul class="menu-dropdown">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="blogs.html">Blogs</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="blog-details.html">Blog Details</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
                             </li>
                         </ul>
                     </div>
                     <div class="more-option mobile-item">
                         <div class="item">
-                            <div class="language">
-                                <select class="niceselect">
-                                    <option value="1">Eng</option>
-                                    <option value="2">Chi</option>
-                                    <option value="3">Fre</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <a href="login.html" class="btn btn-md btn-primary btn-gradient icon-start" title="Login" target="_self"><i class="fal fa-sign-in-alt"></i> Login</a>
+                            <a href="login.html" class="btn btn-md btn-primary btn-gradient icon-start" title="Entrar" target="_self"><i class="fal fa-sign-in-alt"></i> Entrar</a>
                         </div>
                     </div>
                 </nav>
