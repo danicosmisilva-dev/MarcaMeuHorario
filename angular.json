@@ -26,6 +26,28 @@
             ],
             "styles": [
               "src/styles.css"
+            ],
+            "scripts": [
+              "assets/js/vendors/jquery.min.js",
+              "assets/js/vendors/bootstrap.min.js",
+              "assets/js/vendors/swiper-bundle.min.js",
+              "assets/js/vendors/aos.min.js",
+              "assets/js/vendors/moment.min.js",
+              "assets/js/vendors/daterangepicker.js",
+              "assets/js/vendors/jquery.nice-select.min.js",
+              "assets/js/vendors/nouislider.min.js",
+              "assets/js/vendors/bs-stepper.min.js",
+              "assets/js/vendors/datatables.min.js",
+              "assets/js/vendors/jquery.magnific-popup.min.js",
+              "assets/js/vendors/jquery.counterup.min.js",
+              "assets/js/vendors/lazysizes.min.js",
+              "assets/js/vendors/parallax.min.js",
+              "assets/js/vendors/mouse-hover-move.js",
+              "assets/js/vendors/pignose.calendar.full.min.js",
+              "assets/js/vendors/svg-loader.min.js",
+              "assets/js/vendors/tabs-scroller.js",
+              "assets/js/vendors/tweenMax.min.js",
+              "assets/js/script.js"
             ]
           },
           "configurations": {
