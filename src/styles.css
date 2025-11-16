@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../assets/css/vendors/bootstrap.min.css';
+@import '../assets/css/vendors/datatables.min.css';
+@import '../assets/fonts/fontawesome/css/all.min.css';
+@import '../assets/fonts/icomoon/style.css';
+@import '../assets/css/vendors/daterangepicker.css';
+@import '../assets/css/vendors/magnific-popup.min.css';
+@import '../assets/css/vendors/swiper-bundle.min.css';
+@import '../assets/css/vendors/nice-select.css';
+@import '../assets/css/vendors/nouislider.min.css';
+@import '../assets/css/vendors/bs-stepper.min.css';
+@import '../assets/css/vendors/aos.min.css';
+@import '../assets/css/vendors/animate.min.css';
+@import '../assets/css/style.css';
+@import '../assets/css/responsive.css';
