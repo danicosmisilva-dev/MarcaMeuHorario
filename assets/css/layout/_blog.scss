@@ -1,0 +1,156 @@
+/* -----------------------------------------
+	Blog CSS
+----------------------------------------- */
+.blog-area {
+    position: relative;
+    overflow: hidden;
+
+    .card {
+        overflow: hidden;
+        transition: all .3s;
+
+        .card-img {
+            overflow: hidden;
+        }
+
+        img {
+            @include transition(transform, .3s, ease-out);
+        }
+
+        p {
+            margin-bottom: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+
+        .card-btn {
+            line-height: 1;
+            font-weight: var(--font-bold);
+            text-decoration: underline;
+            color: var(--color-primary);
+        }
+
+        .card-list {
+            display: inline-flex;
+            align-items: center;
+            gap: 20px;
+
+            a {
+                color: var(--text-medium);
+            }
+
+            i {
+                margin-inline-end: 7px;
+                color: var(--color-primary);
+            }
+        }
+
+        &:hover {
+            img {
+                transform: scale3d(1.05, 1.05, 1.05);
+            }
+
+            .btn-text {
+                letter-spacing: .1em;
+            }
+        }
+    }
+}
+
+.blog-area.blog-1 {
+    .card-content {
+        position: relative;
+        z-index: 2;
+        margin-top: -20px;
+        margin-inline: auto;
+        width: calc(100% - 20px);
+    }
+}
+
+.blog-area.blog-2 {
+    .card {
+        .card-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 4;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+
+            * {
+                backface-visibility: hidden;
+            }
+
+            .card-list {
+                background-color: var(--bg-dark);
+                @media #{$lg} {
+                    gap: 15px;
+                }
+                li a:not(i) {
+                    color: var(--text-light);
+                    @media #{$lg} {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .hover-show {
+                height: 0;
+                transform: scaleY(0);
+                opacity: 0;
+                transition: all .3s;
+            }
+
+        }
+        &:hover {
+            .hover-show {
+                height: auto;
+                transform: none;
+                opacity: 1;
+                margin-bottom: 20px;
+            }
+            .card-content *{
+                animation: slideUp .5s 1;
+                animation-fill-mode: both;
+            }
+        }
+    }
+}
+.blog-area.blog-3 {
+    .card {
+        border: 1px solid var(--border-color);
+        .card-content {
+            position: relative;
+            z-index: 2;
+            margin-top: -20px;
+            .card-list {
+                width: 100%;
+                background-color: var(--bg-white);
+                @media #{$lg} {
+                    gap: 15px;
+                }
+                li a:not(i) {
+                    @media #{$lg} {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        &:hover{
+            box-shadow: var(--shadow-md);
+            border-color: transparent;
+        }
+    }
+    
+    .overlay {
+        height: calc(100% / 2.5);
+        background-size: cover;
+    }
+}

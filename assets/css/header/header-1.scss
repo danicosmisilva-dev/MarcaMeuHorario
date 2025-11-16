@@ -1,0 +1,42 @@
+/* -----------------------------------------
+	Header 2 CSS
+----------------------------------------- */
+.header-area.header-2:not(.is-sticky) {
+    :is(.nav-link:not(:is(.active, .menu-dropdown .nav-link)), .btn-icon, .btn-icon-text, .nice-select, .nice-select::after) {
+        color: var(--text-white);
+    }
+
+    .nice-select::after {
+        color: var(--text-white);
+    }
+}
+
+.header-area.header-2 {
+    :is(.btn-primary) {
+        background: var(--color-primary);
+    }
+
+    .nice-select {
+        li {
+            color: var(--text-dark);
+        }
+    }
+
+    .navbar-brand {
+        img:nth-child(2) {
+            display: none;
+        }
+    }
+
+    &.is-sticky {
+        .navbar-brand {
+            img:nth-child(1) {
+                display: none;
+            }
+
+            img:nth-child(2) {
+                display: block;
+            }
+        }
+    }
+}

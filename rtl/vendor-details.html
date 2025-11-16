@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="KreativDev">
+
+    <!-- Title -->
+    <title>Bookapp - Appointment Booking Html Template</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/images/logo/fav.png" type="image/x-icon">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/vendors/bootstrap.min.css">
+    <!-- Data Tables CSS -->
+    <link rel="stylesheet" href="../assets/css/vendors/datatables.min.css">
+    <!-- Fontawesome Icon CSS -->
+    <link rel="stylesheet" href="../assets/fonts/fontawesome/css/all.min.css">
+    <!-- Icomoon Icon CSS -->
+    <link rel="stylesheet" href="../assets/fonts/icomoon/style.css">
+    <!-- Date-range Picker -->
+    <link rel="stylesheet" href="../assets/css/vendors/daterangepicker.css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="../assets/css/vendors/magnific-popup.min.css">
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="../assets/css/vendors/swiper-bundle.min.css">
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="../assets/css/vendors/nice-select.css">
+    <!-- NoUi Range Slider -->
+    <link rel="stylesheet" href="../assets/css/vendors/nouislider.min.css">
+    <!--====== Stepper css ======-->
+    <link rel="stylesheet" href="../assets/css/vendors/bs-stepper.min.css">
+    <!--====== calendar css ======-->
+    <link rel="stylesheet" href="../assets/css/vendors/pignose.calendar.min.css">
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="../assets/css/vendors/aos.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="../assets/css/vendors/animate.min.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- RTL Style CSS -->
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+
+<body class="theme-color-1">
+    <!-- Preloader start -->
+    <div id="preLoader">
+        <div class="loader"></div>
+    </div>
+    <!-- Preloader end -->
+
+    <!-- Header-area start -->
+    <header class="header-area header-1 bg-white pt-0" data-aos="fade-down">
+        <!-- Start mobile menu -->
+        <div class="mobile-menu">
+            <div class="container">
+                <div class="mobile-menu-wrapper"></div>
+            </div>
+        </div>
+        <!-- End mobile menu -->
+
+        <div class="main-responsive-nav">
+            <div class="container">
+                <!-- Mobile Logo -->
+                <div class="logo">
+                    <a href="index.html" target="_self" title="Superv">
+                        <img src="../assets/images/logo/logo-1.png" alt="Brand logo">
+                    </a>
+                </div>
+                <!-- Menu toggle button -->
+                <button class="menu-toggler" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="main-navbar">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html" target="_self" title="Superv">
+                        <img src="../assets/images/logo/logo-1.png" alt="Brand Logo">
+                    </a>
+                    <!-- Navigation items -->
+                    <div class="collapse navbar-collapse">
+                        <ul id="mainMenu" class="navbar-nav mobile-item mx-auto">
+                            <li class="nav-item">
+                                <a href="#home" class="nav-link toggle">Home <i class="fal fa-plus"></i></a>
+                                <ul class="menu-dropdown">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home Demo 1</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index-2.html">Home Demo 2</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index-3.html">Home Demo 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link toggle" href="#services">Services<i class="fal fa-plus"></i></a>
+                                <ul class="menu-dropdown">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="services.html">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="service-details.html">Service Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link toggle" href="#vendors">Vendors<i class="fal fa-plus"></i></a>
+                                <ul class="menu-dropdown">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="vendors.html">Vendors</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="vendor-details.html">Vendor Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link toggle" href="#pages">Pages<i class="fal fa-plus"></i></a>
+                                <ul class="menu-dropdown">
+                                    <li class="nav-item">
+                                        <a class="nav-link toggle" href="javaScript:void(0)">My Account<i class="fal fa-plus"></i></a>
+                                        <ul class="menu-dropdown">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="dashboard.html">Dashboard</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="order.html">Order List</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="order-details.html">Order Details</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="profile.html">Profile</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="login.html">Login</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="signup.html">Signup</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="reset-password.html">Reset Password</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="forgot-password.html">Forgot Password</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="wishlist.html">Wishlist</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="checkout.html">Checkout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link toggle" href="#blogs">Blog<i class="fal fa-plus"></i></a>
+                                <ul class="menu-dropdown">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="blogs.html">Blogs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="blog-details.html">Blog Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="more-option mobile-item">
+                        <div class="item">
+                            <div class="language">
+                                <select class="niceselect">
+                                    <option value="1">Eng</option>
+                                    <option value="2">Chi</option>
+                                    <option value="3">Fre</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="login.html" class="btn btn-md btn-primary btn-gradient icon-start" title="Login" target="_self"><i class="fal fa-sign-in-alt"></i> Login</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header-area end -->
+
+    <!-- Page title start-->
+    <div class="page-title-area bg-img bg-cover" data-bg-image="../assets/images/page-title-bg-1.png">
+        <div class="container">
+            <div class="content">
+                <div class="author">
+                    <figure class="author-img">
+                        <a href="javaScript:void(0)" class="lazy-container radius-md ratio ratio-1-1">
+                            <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/vendor/vendor-logo-1.png" alt="Vendor">
+                        </a>
+                    </figure>
+                    <div class="author-info">
+                        <h4 class="color-white mb-1">City Ultra Shop</h4>
+                        <span>Member since August 2018</span>
+                        <div class="ratings mt-10">
+                            <div class="rate">
+                                <div class="rating-icon"></div>
+                            </div>
+                            <span class="ratings-total">(250 Rating)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page title end-->
+
+    <!-- Breadcrumb area start -->
+    <div class="breadcrumb-area pt-30">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Vendor Details</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Breadcrumb area end -->
+
+    <!-- Listing-single-area start -->
+    <div class="listing-single-area ptb-60">
+        <div class="container">
+            <div class="row gx-xl-4">
+                <div class="col-lg-9">
+                    <div class="tabs-navigation tabs-navigation-2 border mb-30" data-aos="fade-up">
+                        <ul class="nav nav-tabs flex-wrap">
+                            <li class="nav-item">
+                                <button class="nav-link active" type="button" data-bs-toggle="tab" data-bs-target="#tab1">All Services</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" type="button" data-bs-toggle="tab" data-bs-target="#tab2">Barber Services</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" type="button" data-bs-toggle="tab" data-bs-target="#tab3" tabindex="-1">Plumber Services</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" type="button" data-bs-toggle="tab" data-bs-target="#tab4" tabindex="-1">Fitness Services</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content mb-50">
+                        <div class="tab-pane show slide active" id="tab1">
+                            <div class="row">
+                                <div class="col-xl-4 col-sm-6" data-aos="fade-up">
+                                    <div class="product-default border radius-md p-15 mb-25">
+                                        <figure class="product-img mb-15">
+                                            <a href="service-details.html" title="Image" target="_self" class="lazy-container radius-sm ratio ratio-2-3">
+                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/services/service-5.png" alt="Product">
+                                            </a>
+                                        </figure>
+                                        <div class="product-details">
+                                            <div class="d-flex align-items-center justify-content-between gap-2">
+                                                <span class="tag font-sm">Barber Shop</span>
+                                                <a href="wishlist.html" class="btn btn-icon border radius-sm" title="Save to Wishlist">
+                                                    <i class="fal fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h6 class="product-title mb-0">
+                                                <a href="service-details.html" target="_self" title="City Tower Barber Shop">City Tower Barber Shop</a>
+                                            </h6>
+                                            <div class="author mb-10 mt-10">
+                                                <img class="lazyload blur-up" src="../assets/images/placeholder.png" data-src="../assets/images/avatar-1.jpg" alt="Image">
+                                                <span class="font-sm">
+                                                    By <a href="javaScript:void(0)" target="_self" title="John Doe">John
+                                                        Doe</a>
+                                                </span>
+                                            </div>
+                                            <span class="font-sm icon-start"><i class="fal fa-map-marker-alt"></i>City
+                                                tower, Road : 1285, Usa</span>
+                                            <div class="d-flex align-items-center justify-content-between gap-2 mt-10">
+                                                <div class="product-price">
+                                                    <span class="h6 new-price">$350.00</span>
+                                                    <span class="prev-price font-sm">$400.00</span>
+                                                </div>
+                                                <a href="javaScript:void(0)" class="btn btn-sm btn-outline-2" data-bs-toggle="modal" data-bs-target="#makeBooking" title="Book Now" target="_self">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div><!-- product-default -->
+                                </div>
+                                <div class="col-xl-4 col-sm-6" data-aos="fade-up">
+                                    <div class="product-default border radius-md p-15 mb-25">
+                                        <figure class="product-img mb-15">
+                                            <a href="service-details.html" title="Image" target="_self" class="lazy-container radius-sm ratio ratio-2-3">
+                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/services/service-6.png" alt="Product">
+                                            </a>
+                                        </figure>
+                                        <div class="product-details">
+                                            <div class="d-flex align-items-center justify-content-between gap-2">
+                                                <span class="tag font-sm">Barber Shop</span>
+                                                <a href="wishlist.html" class="btn btn-icon border radius-sm" title="Save to Wishlist">
+                                                    <i class="fal fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h6 class="product-title mb-0">
+                                                <a href="service-details.html" target="_self" title="City Tower Barber Shop">City Tower Barber Shop</a>
+                                            </h6>
+                                            <div class="author mb-10 mt-10">
+                                                <img class="lazyload blur-up" src="../assets/images/placeholder.png" data-src="../assets/images/avatar-2.jpg" alt="Image">
+                                                <span class="font-sm">
+                                                    By <a href="javaScript:void(0)" target="_self" title="John Doe">John
+                                                        Doe</a>
+                                                </span>
+                                            </div>
+                                            <span class="font-sm icon-start"><i class="fal fa-map-marker-alt"></i>City
+                                                tower, Road : 1285, Usa</span>
+                                            <div class="d-flex align-items-center justify-content-between gap-2 mt-10">
+                                                <div class="product-price">
+                                                    <span class="h6 new-price">$350.00</span>
+                                                    <span class="prev-price font-sm">$400.00</span>
+                                                </div>
+                                                <a href="javaScript:void(0)" class="btn btn-sm btn-outline-2" data-bs-toggle="modal" data-bs-target="#makeBooking" title="Book Now" target="_self">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div><!-- product-default -->
+                                </div>
+                                <div class="col-xl-4 col-sm-6" data-aos="fade-up">
+                                    <div class="product-default border radius-md p-15 mb-25">
+                                        <figure class="product-img mb-15">
+                                            <a href="service-details.html" title="Image" target="_self" class="lazy-container radius-sm ratio ratio-2-3">
+                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/services/service-7.png" alt="Product">
+                                            </a>
+                                        </figure>
+                                        <div class="product-details">
+                                            <div class="d-flex align-items-center justify-content-between gap-2">
+                                                <span class="tag font-sm">Barber Shop</span>
+                                                <a href="wishlist.html" class="btn btn-icon border radius-sm" title="Save to Wishlist">
+                                                    <i class="fal fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h6 class="product-title mb-0">
+                                                <a href="service-details.html" target="_self" title="City Tower Barber Shop">City Tower Barber Shop</a>
+                                            </h6>
+                                            <div class="author mb-10 mt-10">
+                                                <img class="lazyload blur-up" src="../assets/images/placeholder.png" data-src="../assets/images/avatar-3.jpg" alt="Image">
+                                                <span class="font-sm">
+                                                    By <a href="javaScript:void(0)" target="_self" title="John Doe">John
+                                                        Doe</a>
+                                                </span>
+                                            </div>
+                                            <span class="font-sm icon-start"><i class="fal fa-map-marker-alt"></i>City
+                                                tower, Road : 1285, Usa</span>
+                                            <div class="d-flex align-items-center justify-content-between gap-2 mt-10">
+                                                <div class="product-price">
+                                                    <span class="h6 new-price">$350.00</span>
+                                                    <span class="prev-price font-sm">$400.00</span>
+                                                </div>
+                                                <a href="javaScript:void(0)" class="btn btn-sm btn-outline-2" data-bs-toggle="modal" data-bs-target="#makeBooking" title="Book Now" target="_self">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div><!-- product-default -->
+                                </div>
+                                <div class="col-xl-4 col-sm-6" data-aos="fade-up">
+                                    <div class="product-default border radius-md p-15 mb-25">
+                                        <figure class="product-img mb-15">
+                                            <a href="service-details.html" title="Image" target="_self" class="lazy-container radius-sm ratio ratio-2-3">
+                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/services/service-8.png" alt="Product">
+                                            </a>
+                                        </figure>
+                                        <div class="product-details">
+                                            <div class="d-flex align-items-center justify-content-between gap-2">
+                                                <span class="tag font-sm">Barber Shop</span>
+                                                <a href="wishlist.html" class="btn btn-icon border radius-sm" title="Save to Wishlist">
+                                                    <i class="fal fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h6 class="product-title mb-0">
+                                                <a href="service-details.html" target="_self" title="City Tower Barber Shop">City Tower Barber Shop</a>
+                                            </h6>
+                                            <div class="author mb-10 mt-10">
+                                                <img class="lazyload blur-up" src="../assets/images/placeholder.png" data-src="../assets/images/avatar-4.jpg" alt="Image">
+                                                <span class="font-sm">
+                                                    By <a href="javaScript:void(0)" target="_self" title="John Doe">John
+                                                        Doe</a>
+                                                </span>
+                                            </div>
+                                            <span class="font-sm icon-start"><i class="fal fa-map-marker-alt"></i>City
+                                                tower, Road : 1285, Usa</span>
+                                            <div class="d-flex align-items-center justify-content-between gap-2 mt-10">
+                                                <div class="product-price">
+                                                    <span class="h6 new-price">$350.00</span>
+                                                    <span class="prev-price font-sm">$400.00</span>
+                                                </div>
+                                                <a href="javaScript:void(0)" class="btn btn-sm btn-outline-2" data-bs-toggle="modal" data-bs-target="#makeBooking" title="Book Now" target="_self">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div><!-- product-default -->
+                                </div>
+                                <div class="col-xl-4 col-sm-6" data-aos="fade-up">
+                                    <div class="product-default border radius-md p-15 mb-25">
+                                        <figure class="product-img mb-15">
+                                            <a href="service-details.html" title="Image" target="_self" class="lazy-container radius-sm ratio ratio-2-3">
+                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/services/service-9.png" alt="Product">
+                                            </a>
+                                        </figure>
+                                        <div class="product-details">
+                                            <div class="d-flex align-items-center justify-content-between gap-2">
+                                                <span class="tag font-sm">Barber Shop</span>
+                                                <a href="wishlist.html" class="btn btn-icon border radius-sm" title="Save to Wishlist">
+                                                    <i class="fal fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h6 class="product-title mb-0">
+                                                <a href="service-details.html" target="_self" title="City Tower Barber Shop">City Tower Barber Shop</a>
+                                            </h6>
+                                            <div class="author mb-10 mt-10">
+                                                <img class="lazyload blur-up" src="../assets/images/placeholder.png" data-src="../assets/images/avatar-5.jpg" alt="Image">
+                                                <span class="font-sm">
+                                                    By <a href="javaScript:void(0)" target="_self" title="John Doe">John
+                                                        Doe</a>
+                                                </span>
+                                            </div>
+                                            <span class="font-sm icon-start"><i class="fal fa-map-marker-alt"></i>City
+                                                tower, Road : 1285, Usa</span>
+                                            <div class="d-flex align-items-center justify-content-between gap-2 mt-10">
+                                                <div class="product-price">
+                                                    <span class="h6 new-price">$350.00</span>
+                                                    <span class="prev-price font-sm">$400.00</span>
+                                                </div>
+                                                <a href="javaScript:void(0)" class="btn btn-sm btn-outline-2" data-bs-toggle="modal" data-bs-target="#makeBooking" title="Book Now" target="_self">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div><!-- product-default -->
+                                </div>
+                                <div class="col-xl-4 col-sm-6" data-aos="fade-up">
+                                    <div class="product-default border radius-md p-15 mb-25">
+                                        <figure class="product-img mb-15">
+                                            <a href="service-details.html" title="Image" target="_self" class="lazy-container radius-sm ratio ratio-2-3">
+                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/services/service-10.png" alt="Product">
+                                            </a>
+                                        </figure>
+                                        <div class="product-details">
+                                            <div class="d-flex align-items-center justify-content-between gap-2">
+                                                <span class="tag font-sm">Barber Shop</span>
+                                                <a href="wishlist.html" class="btn btn-icon border radius-sm" title="Save to Wishlist">
+                                                    <i class="fal fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h6 class="product-title mb-0">
+                                                <a href="service-details.html" target="_self" title="City Tower Barber Shop">City Tower Barber Shop</a>
+                                            </h6>
+                                            <div class="author mb-10 mt-10">
+                                                <img class="lazyload blur-up" src="../assets/images/placeholder.png" data-src="../assets/images/avatar-6.jpg" alt="Image">
+                                                <span class="font-sm">
+                                                    By <a href="javaScript:void(0)" target="_self" title="John Doe">John
+                                                        Doe</a>
+                                                </span>
+                                            </div>
+                                            <span class="font-sm icon-start"><i class="fal fa-map-marker-alt"></i>City
+                                                tower, Road : 1285, Usa</span>
+                                            <div class="d-flex align-items-center justify-content-between gap-2 mt-10">
+                                                <div class="product-price">
+                                                    <span class="h6 new-price">$350.00</span>
+                                                    <span class="prev-price font-sm">$400.00</span>
+                                                </div>
+                                                <a href="javaScript:void(0)" class="btn btn-sm btn-outline-2" data-bs-toggle="modal" data-bs-target="#makeBooking" title="Book Now" target="_self">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div><!-- product-default -->
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <a href="javaScript:void(0)" class="btn btn-md btn-outline-2 icon-end" title="Title" target="_self">Load More <i class="far fa-sync-alt"></i></a>
+                            </div>
+                            <nav class="pagination-nav mt-10" data-aos="fade-up">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <i class="far fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">30</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <i class="far fa-angle-left"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="tab-pane slide" id="tab2">
+                            <div class="row">
+                                <div class="col-xl-4 col-sm-6" data-aos="fade-up">
+                                    <div class="product-default border radius-md p-15 mb-25">
+                                        <figure class="product-img mb-15">
+                                            <a href="vendor-details.html" title="Image" target="_self" class="lazy-container radius-sm ratio ratio-2-3">
+                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/vendor/shop-7.png" alt="Product">
+                                            </a>
+                                        </figure>
+                                        <div class="product-details">
+                                            <h6 class="product-title mb-0">
+                                                <a href="vendor-details.html" target="_self" title="City Tower Barber Shop">City Tower Barber Shop</a>
+                                            </h6>
+                                            <div class="author mb-10 mt-10">
+                                                <img class="lazyload blur-up" src="../assets/images/placeholder.png" data-src="../assets/images/avatar-3.jpg" alt="Image">
+                                                <span class="font-sm">
+                                                    By <a href="vendor-details.html" target="_self" title="John Doe">John
+                                                        Doe</a>
+                                                </span>
+                                            </div>
+                                            <span class="font-sm icon-start"><i class="fal fa-map-marker-alt"></i>City
+                                                tower, Road : 1285, Usa</span>
+                                            <div class="d-flex align-items-center gap-15 mt-10">
+                                                <a href="vendor-details.html" class="btn btn-sm btn-outline-2" title="Visit Store" target="_self">Visit Store</a>
+                                                <span class="font-sm">10+ Service Available</span>
+                                            </div>
+                                        </div>
+                                    </div><!-- product-default -->
+                                </div>
+                                <div class="col-xl-4 col-sm-6" data-aos="fade-up">
+                                    <div class="product-default border radius-md p-15 mb-25">
+                                        <figure class="product-img mb-15">
+                                            <a href="vendor-details.html" title="Image" target="_self" class="lazy-container radius-sm ratio ratio-2-3">
+                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/vendor/shop-8.png" alt="Product">
+                                            </a>
+                                        </figure>
+                                        <div class="product-details">
+                                            <h6 class="product-title mb-0">
+                                                <a href="vendor-details.html" target="_self" title="City Tower Barber Shop">City Tower Barber Shop</a>
+                                            </h6>
+                                            <div class="author mb-10 mt-10">
+                                                <img class="lazyload blur-up" src="../assets/images/placeholder.png" data-src="../assets/images/avatar-4.jpg" alt="Image">
+                                                <span class="font-sm">
+                                                    By <a href="vendor-details.html" target="_self" title="John Doe">John
+                                                        Doe</a>
+                                                </span>
+                                            </div>
+                                            <span class="font-sm icon-start"><i class="fal fa-map-marker-alt"></i>City
+                                                tower, Road : 1285, Usa</span>
+                                            <div class="d-flex align-items-center gap-15 mt-10">
+                                                <a href="vendor-details.html" class="btn btn-sm btn-outline-2" title="Visit Store" target="_self">Visit Store</a>
+                                                <span class="font-sm">10+ Service Available</span>
+                                            </div>
+                                        </div>
+                                    </div><!-- product-default -->
+                                </div>
+                                <div class="col-xl-4 col-sm-6" data-aos="fade-up">
+                                    <div class="product-default border radius-md p-15 mb-25">
+                                        <figure class="product-img mb-15">
+                                            <a href="vendor-details.html" title="Image" target="_self" class="lazy-container radius-sm ratio ratio-2-3">
+                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/vendor/shop-9.png" alt="Product">
+                                            </a>
+                                        </figure>
+                                        <div class="product-details">
+                                            <h6 class="product-title mb-0">
+                                                <a href="vendor-details.html" target="_self" title="City Tower Barber Shop">City Tower Barber Shop</a>
+                                            </h6>
+                                            <div class="author mb-10 mt-10">
+                                                <img class="lazyload blur-up" src="../assets/images/placeholder.png" data-src="../assets/images/avatar-5.jpg" alt="Image">
+                                                <span class="font-sm">
+                                                    By <a href="vendor-details.html" target="_self" title="John Doe">John
+                                                        Doe</a>
+                                                </span>
+                                            </div>
+                                            <span class="font-sm icon-start"><i class="fal fa-map-marker-alt"></i>City
+                                                tower, Road : 1285, Usa</span>
+                                            <div class="d-flex align-items-center gap-15 mt-10">
+                                                <a href="vendor-details.html" class="btn btn-sm btn-outline-2" title="Visit Store" target="_self">Visit Store</a>
+                                                <span class="font-sm">10+ Service Available</span>
+                                            </div>
+                                        </div>
+                                    </div><!-- product-default -->
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <a href="javaScript:void(0)" class="btn btn-md btn-outline-2 icon-end" title="Title" target="_self">Load More <i class="far fa-sync-alt"></i></a>
+                            </div>
+                            <nav class="pagination-nav mt-10" data-aos="fade-up">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <i class="far fa-angle-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">30</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <i class="far fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="tab-pane slide" id="tab3">
+                            <div class="row">
+                                <div class="col-xl-4 col-sm-6" data-aos="fade-up">
+                                    <div class="product-default border radius-md p-15 mb-25">
+                                        <figure class="product-img mb-15">
+                                            <a href="vendor-details.html" title="Image" target="_self" class="lazy-container radius-sm ratio ratio-2-3">
+                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/vendor/shop-10.png" alt="Product">
+                                            </a>
+                                        </figure>
+                                        <div class="product-details">
+                                            <h6 class="product-title mb-0">
+                                                <a href="vendor-details.html" target="_self" title="City Tower Barber Shop">City Tower Barber Shop</a>
+                                            </h6>
+                                            <div class="author mb-10 mt-10">
+                                                <img class="lazyload blur-up" src="../assets/images/placeholder.png" data-src="../assets/images/avatar-6.jpg" alt="Image">
+                                                <span class="font-sm">
+                                                    By <a href="vendor-details.html" target="_self" title="John Doe">John
+                                                        Doe</a>
+                                                </span>
+                                            </div>
+                                            <span class="font-sm icon-start"><i class="fal fa-map-marker-alt"></i>City
+                                                tower, Road : 1285, Usa</span>
+                                            <div class="d-flex align-items-center gap-15 mt-10">
+                                                <a href="vendor-details.html" class="btn btn-sm btn-outline-2" title="Visit Store" target="_self">Visit Store</a>
+                                                <span class="font-sm">10+ Service Available</span>
+                                            </div>
+                                        </div>
+                                    </div><!-- product-default -->
+                                </div>
+                                <div class="col-xl-4 col-sm-6" data-aos="fade-up">
+                                    <div class="product-default border radius-md p-15 mb-25">
+                                        <figure class="product-img mb-15">
+                                            <a href="vendor-details.html" title="Image" target="_self" class="lazy-container radius-sm ratio ratio-2-3">
+                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/vendor/shop-11.png" alt="Product">
+                                            </a>
+                                        </figure>
+                                        <div class="product-details">
+                                            <h6 class="product-title mb-0">
+                                                <a href="vendor-details.html" target="_self" title="City Tower Barber Shop">City Tower Barber Shop</a>
+                                            </h6>
+                                            <div class="author mb-10 mt-10">
+                                                <img class="lazyload blur-up" src="../assets/images/placeholder.png" data-src="../assets/images/avatar-7.jpg" alt="Image">
+                                                <span class="font-sm">
+                                                    By <a href="vendor-details.html" target="_self" title="John Doe">John
+                                                        Doe</a>
+                                                </span>
+                                            </div>
+                                            <span class="font-sm icon-start"><i class="fal fa-map-marker-alt"></i>City
+                                                tower, Road : 1285, Usa</span>
+                                            <div class="d-flex align-items-center gap-15 mt-10">
+                                                <a href="vendor-details.html" class="btn btn-sm btn-outline-2" title="Visit Store" target="_self">Visit Store</a>
+                                                <span class="font-sm">10+ Service Available</span>
+                                            </div>
+                                        </div>
+                                    </div><!-- product-default -->
+                                </div>
+                                <div class="col-xl-4 col-sm-6" data-aos="fade-up">
+                                    <div class="product-default border radius-md p-15 mb-25">
+                                        <figure class="product-img mb-15">
+                                            <a href="vendor-details.html" title="Image" target="_self" class="lazy-container radius-sm ratio ratio-2-3">
+                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/vendor/shop-12.png" alt="Product">
+                                            </a>
+                                        </figure>
+                                        <div class="product-details">
+                                            <h6 class="product-title mb-0">
+                                                <a href="vendor-details.html" target="_self" title="City Tower Barber Shop">City Tower Barber Shop</a>
+                                            </h6>
+                                            <div class="author mb-10 mt-10">
+                                                <img class="lazyload blur-up" src="../assets/images/placeholder.png" data-src="../assets/images/avatar-8.jpg" alt="Image">
+                                                <span class="font-sm">
+                                                    By <a href="vendor-details.html" target="_self" title="John Doe">John
+                                                        Doe</a>
+                                                </span>
+                                            </div>
+                                            <span class="font-sm icon-start"><i class="fal fa-map-marker-alt"></i>City
+                                                tower, Road : 1285, Usa</span>
+                                            <div class="d-flex align-items-center gap-15 mt-10">
+                                                <a href="vendor-details.html" class="btn btn-sm btn-outline-2" title="Visit Store" target="_self">Visit Store</a>
+                                                <span class="font-sm">10+ Service Available</span>
+                                            </div>
+                                        </div>
+                                    </div><!-- product-default -->
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <a href="javaScript:void(0)" class="btn btn-md btn-outline-2 icon-end" title="Title" target="_self">Load More <i class="far fa-sync-alt"></i></a>
+                            </div>
+                            <nav class="pagination-nav mt-10" data-aos="fade-up">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <i class="far fa-angle-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">30</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <i class="far fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="tab-pane slide" id="tab4">
+                            <div class="row">
+                                <div class="col-xl-4 col-sm-6" data-aos="fade-up">
+                                    <div class="product-default border radius-md p-15 mb-25">
+                                        <figure class="product-img mb-15">
+                                            <a href="vendor-details.html" title="Image" target="_self" class="lazy-container radius-sm ratio ratio-2-3">
+                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/vendor/shop-13.png" alt="Product">
+                                            </a>
+                                        </figure>
+                                        <div class="product-details">
+                                            <h6 class="product-title mb-0">
+                                                <a href="vendor-details.html" target="_self" title="City Tower Barber Shop">City Tower Barber Shop</a>
+                                            </h6>
+                                            <div class="author mb-10 mt-10">
+                                                <img class="lazyload blur-up" src="../assets/images/placeholder.png" data-src="../assets/images/avatar-6.jpg" alt="Image">
+                                                <span class="font-sm">
+                                                    By <a href="vendor-details.html" target="_self" title="John Doe">John
+                                                        Doe</a>
+                                                </span>
+                                            </div>
+                                            <span class="font-sm icon-start"><i class="fal fa-map-marker-alt"></i>City
+                                                tower, Road : 1285, Usa</span>
+                                            <div class="d-flex align-items-center gap-15 mt-10">
+                                                <a href="vendor-details.html" class="btn btn-sm btn-outline-2" title="Visit Store" target="_self">Visit Store</a>
+                                                <span class="font-sm">10+ Service Available</span>
+                                            </div>
+                                        </div>
+                                    </div><!-- product-default -->
+                                </div>
+                                <div class="col-xl-4 col-sm-6" data-aos="fade-up">
+                                    <div class="product-default border radius-md p-15 mb-25">
+                                        <figure class="product-img mb-15">
+                                            <a href="vendor-details.html" title="Image" target="_self" class="lazy-container radius-sm ratio ratio-2-3">
+                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/vendor/shop-14.png" alt="Product">
+                                            </a>
+                                        </figure>
+                                        <div class="product-details">
+                                            <h6 class="product-title mb-0">
+                                                <a href="vendor-details.html" target="_self" title="City Tower Barber Shop">City Tower Barber Shop</a>
+                                            </h6>
+                                            <div class="author mb-10 mt-10">
+                                                <img class="lazyload blur-up" src="../assets/images/placeholder.png" data-src="../assets/images/avatar-7.jpg" alt="Image">
+                                                <span class="font-sm">
+                                                    By <a href="vendor-details.html" target="_self" title="John Doe">John
+                                                        Doe</a>
+                                                </span>
+                                            </div>
+                                            <span class="font-sm icon-start"><i class="fal fa-map-marker-alt"></i>City
+                                                tower, Road : 1285, Usa</span>
+                                            <div class="d-flex align-items-center gap-15 mt-10">
+                                                <a href="vendor-details.html" class="btn btn-sm btn-outline-2" title="Visit Store" target="_self">Visit Store</a>
+                                                <span class="font-sm">10+ Service Available</span>
+                                            </div>
+                                        </div>
+                                    </div><!-- product-default -->
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <a href="javaScript:void(0)" class="btn btn-md btn-outline-2 icon-end" title="Title" target="_self">Load More <i class="far fa-sync-alt"></i></a>
+                            </div>
+                            <nav class="pagination-nav mt-10" data-aos="fade-up">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <i class="far fa-angle-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">30</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <i class="far fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <!-- Review area -->
+                    <div class="row">
+                        <div class="col-xl-10">
+                            <div class="review-form" data-aos="fade-up">
+                                <div class="review-submit radius-md p-25 shadow-md mb-40">
+                                    <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                                        <div class="author">
+                                            <figure class="author-img">
+                                                <a href="javaScript:void(0)" class="lazy-container rounded-circle ratio ratio-1-1">
+                                                    <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/avatar-1.jpg" alt="Author">
+                                                </a>
+                                            </figure>
+                                            <a href="javaScript:void(0)" class="btn-text fs-6" title="Link">Write a Review</a>
+                                        </div>
+                                        <div class="rating-icons">
+                                            <form>
+                                                <fieldset>
+                                                    <span class="rating-icon-group">
+                                                        <input type="radio" id="rating-1" name="rating" value="1">
+                                                        <label for="rating-1"><i class="fa fa-star fa-fw"></i></label>
+                                                        <input type="radio" id="rating-2" name="rating" value="2">
+                                                        <label for="rating-2"><i class="fa fa-star fa-fw"></i></label>
+                                                        <input type="radio" id="rating-3" name="rating" value="3">
+                                                        <label for="rating-3"><i class="fa fa-star fa-fw"></i></label>
+                                                        <input type="radio" id="rating-4" name="rating" value="4">
+                                                        <label for="rating-4"><i class="fa fa-star fa-fw"></i></label>
+                                                        <input type="radio" id="rating-5" name="rating" value="5">
+                                                        <label for="rating-5"><i class="fa fa-star fa-fw"></i></label>
+                                                    </span>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-progresses p-30 radius-md border mb-40" data-aos="fade-up">
+                                <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-30">
+                                    <h4 class="mb-0">Total Reviews: 399</h4>
+                                    <div class="ratings size-md align-items-start">
+                                        <div class="rate mb-2">
+                                            <div class="rating-icon"></div>
+                                        </div>
+                                        <span class="ratings-total font-lg">5.0</span>
+                                    </div>
+                                </div>
+                                <div class="review-progress color-dark mb-10 row align-items-center justify-content-between">
+                                    <span class="col-2">Excellent</span>
+                                    <div class="progress-line col-9">
+                                        <div class="progress">
+                                            <div class="progress-bar bg-primary" style="width: 90%" role="progressbar" aria-label="Basic example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <span class="col-1 text-end">90%</span>
+                                </div>
+                                <div class="review-progress color-dark mb-10 row align-items-center justify-content-between">
+                                    <span class="col-2">Good</span>
+                                    <div class="progress-line col-9">
+                                        <div class="progress">
+                                            <div class="progress-bar bg-primary" style="width: 60%" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <span class="col-1 text-end">60%</span>
+                                </div>
+                                <div class="review-progress color-dark mb-10 row align-items-center justify-content-between">
+                                    <span class="col-2">Average</span>
+                                    <div class="progress-line col-9">
+                                        <div class="progress">
+                                            <div class="progress-bar bg-primary" style="width: 50%" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <span class="col-1 text-end">50%</span>
+                                </div>
+                                <div class="review-progress color-dark mb-10 row align-items-center justify-content-between">
+                                    <span class="col-2">Poor</span>
+                                    <div class="progress-line col-9">
+                                        <div class="progress">
+                                            <div class="progress-bar bg-primary" style="width: 20%" role="progressbar" aria-label="Basic example" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <span class="col-1 text-end">20%</span>
+                                </div>
+                                <div class="review-progress color-dark mb-10 row align-items-center justify-content-between">
+                                    <span class="col-2">Bad</span>
+                                    <div class="progress-line col-9">
+                                        <div class="progress">
+                                            <div class="progress-bar bg-primary" style="width: 10%" role="progressbar" aria-label="Basic example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <span class="col-1 text-end">10%</span>
+                                </div>
+                            </div>
+                            <div class="review-box mb-10" data-aos="fade-up">
+                                <div class="review-list mb-30 border radius-md">
+                                    <div class="review-item p-30">
+                                        <div class="review-header mb-20">
+                                            <div class="author d-flex align-items-center justify-content-between gap-3">
+                                                <div class="author-img">
+                                                    <a href="#" target="_self" title="Link" class="lazy-container ratio ratio-1-1 rounded-circle">
+                                                        <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/avatar-4.jpg" alt="Avatar">
+                                                    </a>
+                                                </div>
+                                                <div class="author-info">
+                                                    <h6 class="mb-1">
+                                                        <a href="#" target="_self" title="Link">Mark Jco</a>
+                                                    </h6>
+                                                    <div class="ratings mb-1">
+                                                        <div class="rate">
+                                                            <div class="rating-icon"></div>
+                                                        </div>
+                                                        <span class="ratings-total">(4.5)</span>
+                                                    </div>
+                                                    <span class="font-xsm icon-start">
+                                                        <span class="color-green"><i class="fas fa-badge-check"></i></span>
+                                                        Verified User
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="more-info font-sm">
+                                                <div class="icon-start">
+                                                    <i class="fal fa-map-marker-alt"></i>Los Angela's, USA
+                                                </div>
+                                                <div class="icon-start"><i class="fal fa-clock"></i>04 Days ago</div>
+                                            </div>
+                                        </div>
+                                        <h5 class="lc-1">Ana Studios was very logical and creative at the same time</h5>
+                                        <p>The client received excellent feedback on DePalma Studios’ designs due to
+                                            their website's improved look and feel. The team was very communicative and
+                                            collaborative, and they demonstrated a unique understanding of the client’s
+                                            requirements, providing very.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="review-list mb-30 border radius-md">
+                                    <div class="review-item p-30">
+                                        <div class="review-header mb-20">
+                                            <div class="author d-flex align-items-center justify-content-between gap-3">
+                                                <div class="author-img">
+                                                    <a href="#" target="_self" title="Link" class="lazy-container ratio ratio-1-1 rounded-circle">
+                                                        <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/avatar-2.jpg" alt="Avatar">
+                                                    </a>
+                                                </div>
+                                                <div class="author-info">
+                                                    <h6 class="mb-1">
+                                                        <a href="#" target="_self" title="Link">Johnny Ben</a>
+                                                    </h6>
+                                                    <div class="ratings mb-1">
+                                                        <div class="rate">
+                                                            <div class="rating-icon"></div>
+                                                        </div>
+                                                        <span class="ratings-total">(4.5)</span>
+                                                    </div>
+                                                    <span class="font-xsm icon-start">
+                                                        <span class="color-green"><i class="fas fa-badge-check"></i></span>
+                                                        Verified User
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="more-info font-sm">
+                                                <div class="icon-start">
+                                                    <i class="fal fa-map-marker-alt"></i>Los Angela's, USA
+                                                </div>
+                                                <div class="icon-start"><i class="fal fa-clock"></i>04 Days ago</div>
+                                            </div>
+                                        </div>
+                                        <h4 class="lc-1">Ana Studios was very logical and creative at the same time</h4>
+                                        <p>The client received excellent feedback on DePalma Studios’ designs due to
+                                            their website's improved look and feel. The team was very communicative and
+                                            collaborative, and they demonstrated a unique understanding of the client’s
+                                            requirements, providing very.
+                                        </p>
+                                    </div>
+                                    <div class="review-reply bg-light-2 radius-md border-top p-30">
+                                        <div class="review-header mb-20 d-flex align-items-center justify-content-between gap-3">
+                                            <div class="author d-flex align-items-center gap-2">
+                                                <div class="icon"><i class="fal fa-reply-all"></i></div>
+                                                <h6 class="mb-0">Reply from Ana Rita Pailo</h6>
+                                            </div>
+                                            <div class="more-info font-sm">
+                                                <div class="icon-start"><i class="fal fa-clock"></i>04 Days ago</div>
+                                            </div>
+                                        </div>
+                                        <div class="message">
+                                            <p>Hi Thomas,</p>
+                                            <p>I can see that we screwed up in our communication with you, and for that
+                                                I sincerely apologize!</p>
+                                            <p>I just re-read the email chain with Sven and I can see that we dropped
+                                                the ball in of our explanation of how we work. I think there were
+                                                several miscommunications that happened here, which I take full
+                                                responsibility for.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <aside class="widget-area" data-aos="fade-up">
+                        <div class="widget widget-author-details border p-25 radius-md mb-30">
+                            <div class="author mb-20 text-center">
+                                <figure class="author-img mx-auto mb-15">
+                                    <div class="lazy-container radius-md ratio ratio-1-1">
+                                        <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/vendor/vendor-logo-2.png" alt="vendor">
+                                    </div>
+                                </figure>
+                                <div class="author-info">
+                                    <h5>Overview Of City Ultra Shop</h5>
+                                    <span class="font-sm icon-start">
+                                        <span class="color-green"><i class="fas fa-badge-check"></i></span>
+                                        Verified User
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="click-show font-sm">
+                                <div class="show-content">
+                                    Lorem ipsum dolor sit amet elit. Ullam nulla in eveniet. In quia vitae ipsa quae culpa aperiam hic cupiditate adipisci eligendi quod, facilis sint corrupti quo aliquam dolorum?
+                                </div>
+                                <div class="read-more-btn">
+                                    <span>Read More</span>
+                                    <span>Read Less</span>
+                                 </div>
+                            </div>
+                            <ul class="toggle-list list-unstyled mt-20" id="toggleList" data-toggle-show="5">
+                                <li>
+                                    <span class="first h6 font-sm">Total Items</span>
+                                    <span class="last font-sm">294 items</span>
+                                </li>
+                                <li>
+                                    <span class="first h6 font-sm">Total Service</span>
+                                    <span class="last font-sm">300 services</span>
+                                </li>
+                                <li>
+                                    <span class="first h6 font-sm">Location</span>
+                                    <span class="last font-sm">Tokyo, Japan</span>
+                                </li>
+                                <li>
+                                    <span class="first h6 font-sm">Member since</span>
+                                    <span class="last font-sm">01 Aug 2018</span>
+                                </li>
+                                <li>
+                                    <span class="first h6 font-sm">Verified User</span>
+                                    <span class="last font-sm">Yes</span>
+                                </li>
+                            </ul>
+                            <span class="btn-text show-more-btn" data-toggle-btn="toggleList">
+                                Show More
+                            </span>
+                            <div class="btn-groups mt-20">
+                                <a href="javaScript:void(0)" class="btn btn-md btn-primary btn-gradient w-100" title="Title" target="_self">Contact Now</a>
+                                <a href="javaScript:void(0)" class="btn btn-md btn-outline w-100" title="Title" target="_self">Follow Me</a>
+                            </div>
+                        </div>
+                        <div class="widget widget-shared-author border p-0 radius-md mb-30">
+                            <div class="tabs-navigation tabs-navigation-3 text-center">
+                                <ul class="nav nav-tabs flex-wrap">
+                                    <li class="nav-item">
+                                        <button class="nav-link btn-sm active" type="button" data-bs-toggle="tab" data-bs-target="#followers">Followers(50)</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link btn-sm" type="button" data-bs-toggle="tab" data-bs-target="#following" tabindex="-1">Following(80)</button>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-content p-20 mt-15">
+                                <div class="tab-pane show slide active" id="followers">
+                                    <div class="shared-author mb-20">
+                                        <figure class="shared-author-img">
+                                            <a href="javaScript:void(0)" class="lazy-container radius-md ratio ratio-1-1">
+                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/vendor/shop-5.png" alt="Author">
+                                            </a>
+                                        </figure>
+                                        <div class="shared-author-info flex-grow-1">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h6 class="mb-0"><a href="javaScript:void(0)">KreativDev</a></h6>
+                                                    <span class="font-xsm">Premium Author</span>
+                                                </div>
+                                                <a href="javaScript:void(0)" class="btn btn-sm btn-outline-2" title="Title" target="_self">Unfollow</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shared-author mb-20">
+                                        <figure class="shared-author-img">
+                                            <a href="javaScript:void(0)" class="lazy-container radius-md ratio ratio-1-1">
+                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/vendor/shop-6.png" alt="Author">
+                                            </a>
+                                        </figure>
+                                        <div class="shared-author-info flex-grow-1">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h6 class="mb-0"><a href="javaScript:void(0)">KreativDev</a></h6>
+                                                    <span class="font-xsm">Premium Author</span>
+                                                </div>
+                                                <a href="javaScript:void(0)" class="btn btn-sm btn-outline-2" title="Title" target="_self">Unfollow</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shared-author mb-20">
+                                        <figure class="shared-author-img">
+                                            <a href="javaScript:void(0)" class="lazy-container radius-md ratio ratio-1-1">
+                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/vendor/shop-7.png" alt="Author">
+                                            </a>
+                                        </figure>
+                                        <div class="shared-author-info flex-grow-1">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h6 class="mb-0"><a href="javaScript:void(0)">KreativDev</a></h6>
+                                                    <span class="font-xsm">Premium Author</span>
+                                                </div>
+                                                <a href="javaScript:void(0)" class="btn btn-sm btn-outline-2" title="Title" target="_self">Unfollow</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shared-author mb-20">
+                                        <figure class="shared-author-img">
+                                            <a href="javaScript:void(0)" class="lazy-container radius-md ratio ratio-1-1">
+                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/vendor/shop-8.png" alt="Author">
+                                            </a>
+                                        </figure>
+                                        <div class="shared-author-info flex-grow-1">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h6 class="mb-0"><a href="javaScript:void(0)">KreativDev</a></h6>
+                                                    <span class="font-xsm">Premium Author</span>
+                                                </div>
+                                                <a href="javaScript:void(0)" class="btn btn-sm btn-outline-2" title="Title" target="_self">Unfollow</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shared-author mb-20">
+                                        <figure class="shared-author-img">
+                                            <a href="javaScript:void(0)" class="lazy-container radius-md ratio ratio-1-1">
+                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/vendor/shop-9.png" alt="Author">
+                                            </a>
+                                        </figure>
+                                        <div class="shared-author-info flex-grow-1">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h6 class="mb-0"><a href="javaScript:void(0)">KreativDev</a></h6>
+                                                    <span class="font-xsm">Premium Author</span>
+                                                </div>
+                                                <a href="javaScript:void(0)" class="btn btn-sm btn-outline-2" title="Title" target="_self">Unfollow</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane slide" id="following">
+                                    <div class="shared-author mb-20">
+                                        <figure class="shared-author-img">
+                                            <a href="javaScript:void(0)" class="lazy-container radius-md ratio ratio-1-1">
+                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/vendor/shop-5.png" alt="Author">
+                                            </a>
+                                        </figure>
+                                        <div class="shared-author-info flex-grow-1">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h6 class="mb-0"><a href="javaScript:void(0)">KreativDev</a></h6>
+                                                    <span class="font-xsm">Premium Author</span>
+                                                </div>
+                                                <a href="javaScript:void(0)" class="btn btn-sm btn-outline-2" title="Title" target="_self">Unfollow</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shared-author mb-20">
+                                        <figure class="shared-author-img">
+                                            <a href="javaScript:void(0)" class="lazy-container radius-md ratio ratio-1-1">
+                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/vendor/shop-6.png" alt="Author">
+                                            </a>
+                                        </figure>
+                                        <div class="shared-author-info flex-grow-1">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h6 class="mb-0"><a href="javaScript:void(0)">KreativDev</a></h6>
+                                                    <span class="font-xsm">Premium Author</span>
+                                                </div>
+                                                <a href="javaScript:void(0)" class="btn btn-sm btn-outline-2" title="Title" target="_self">Unfollow</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shared-author mb-20">
+                                        <figure class="shared-author-img">
+                                            <a href="javaScript:void(0)" class="lazy-container radius-md ratio ratio-1-1">
+                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/vendor/shop-7.png" alt="Author">
+                                            </a>
+                                        </figure>
+                                        <div class="shared-author-info flex-grow-1">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h6 class="mb-0"><a href="javaScript:void(0)">KreativDev</a></h6>
+                                                    <span class="font-xsm">Premium Author</span>
+                                                </div>
+                                                <a href="javaScript:void(0)" class="btn btn-sm btn-outline-2" title="Title" target="_self">Unfollow</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shared-author mb-20">
+                                        <figure class="shared-author-img">
+                                            <a href="javaScript:void(0)" class="lazy-container radius-md ratio ratio-1-1">
+                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/vendor/shop-8.png" alt="Author">
+                                            </a>
+                                        </figure>
+                                        <div class="shared-author-info flex-grow-1">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h6 class="mb-0"><a href="javaScript:void(0)">KreativDev</a></h6>
+                                                    <span class="font-xsm">Premium Author</span>
+                                                </div>
+                                                <a href="javaScript:void(0)" class="btn btn-sm btn-outline-2" title="Title" target="_self">Unfollow</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shared-author mb-20">
+                                        <figure class="shared-author-img">
+                                            <a href="javaScript:void(0)" class="lazy-container radius-md ratio ratio-1-1">
+                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/vendor/shop-9.png" alt="Author">
+                                            </a>
+                                        </figure>
+                                        <div class="shared-author-info flex-grow-1">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h6 class="mb-0"><a href="javaScript:void(0)">KreativDev</a></h6>
+                                                    <span class="font-xsm">Premium Author</span>
+                                                </div>
+                                                <a href="javaScript:void(0)" class="btn btn-sm btn-outline-2" title="Title" target="_self">Unfollow</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pb-40"></div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Listing-single-area start -->
+
+    <!-- Footer-area start -->
+    <footer class="footer-area mt-30 bg-primary-light">
+        <div class="go-top"><i class="fal fa-long-arrow-up"></i></div>
+        <div class="footer-top pt-100 pb-70 text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-5" data-aos="fade-up">
+                        <div class="navbar-brand mt-10">
+                            <span></span>
+                            <a href="index.html" target="_self" title="Link">
+                                <img src="../assets/images/logo/logo-1.png" alt="Brand Logo">
+                            </a>
+                            <span></span>
+                        </div>
+                        <ul class="info-list mt-20">
+                            <li>
+                                <a href="mailto:live@example.com">live@example.com</a>
+                            </li>
+                            <li>
+                                <a href="tel:9992233555">+999 22 33 5555</a>
+                            </li>
+                        </ul>
+                        <div class="social-link mt-20">
+                            <a href="https://www.instagram.com/" target="_blank" title="instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.dribbble.com/" target="_blank" title="dribbble"><i class="fab fa-dribbble"></i></a>
+                            <a href="https://www.twitter.com/" target="_blank" title="twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank" title="youtube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <div class="newsletter-form mx-auto mt-30">
+                            <form id="newsletterForm">
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Enter email here..." type="text" name="EMAIL" required="" autocomplete="off">
+                                    <button class="btn btn-md btn-primary btn-gradient no-animation" type="submit">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                        <ul class="footer-links list-unstyled mt-30">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link" target="_self" title="link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about-us.html" class="nav-link" target="_self" title="link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="services.html" class="nav-link" target="_self" title="link">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="vendors.html" class="nav-link" target="_self" title="link">Shops</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link" target="_self" title="link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right-area border-top ptb-30">
+            <div class="container">
+                <div class="copy-right-content">
+                    <span>
+                        Copyright <i class="fal fa-copyright"></i><span id="footerDate"></span> <a href="index.html" target="_self" title="Bookapp" class="color-primary">Bookapp</a>. All Rights Reserved
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer-area end-->
+
+    <!-- Add Review Modal Start -->
+    <div class="modal booking-modal fade" id="makeBooking" tabindex="-1"  aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-md-down">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fal fa-times"></i></button>
+                <div class="modal-body">
+                    <div class="bs-stepper" id="booking-stepper">
+                        <div class="bs-stepper-header" role="tablist">
+                            <!-- your steps here -->
+                            <div class="step" data-target="#staff">
+                                <button type="button" class="step-trigger" role="tab" aria-controls="staff" id="staff-trigger">
+                                    <span class="h3 mb-1">01</span>
+                                    <span class="bs-stepper-circle"><i class="fal fa-calendar-check"></i></span>
+                                    <span class="bs-stepper-label">Staff</span>
+                                </button>
+                            </div>
+                            <div class="step" data-target="#time">
+                                <button type="button" class="step-trigger" role="tab" aria-controls="time" id="time-trigger">
+                                    <span class="h3 mb-1">02</span>
+                                    <span class="bs-stepper-circle"><i class="fal fa-calendar-check"></i></span>
+                                    <span class="bs-stepper-label">Time</span>
+                                </button>
+                            </div>
+                            <div class="step" data-target="#info">
+                                <button type="button" class="step-trigger" role="tab" aria-controls="info" id="info-trigger">
+                                    <span class="h3 mb-1">03</span>
+                                    <span class="bs-stepper-circle"><i class="fal fa-calendar-check"></i></span>
+                                    <span class="bs-stepper-label">Information</span>
+                                </button>
+                            </div>
+                            <div class="step" data-target="#payment">
+                                <button type="button" class="step-trigger" role="tab" aria-controls="payment" id="payment-trigger">
+                                    <span class="h3 mb-1">04</span>
+                                    <span class="bs-stepper-circle"><i class="fal fa-calendar-check"></i></span>
+                                    <span class="bs-stepper-label">Payment</span>
+                                </button>
+                            </div>
+                            <div class="step" data-target="#confirm">
+                                <button type="button" class="step-trigger" role="tab" aria-controls="confirm" id="confirm-trigger">
+                                    <span class="h3 mb-1">05</span>
+                                    <span class="bs-stepper-circle"><i class="fal fa-calendar-check"></i></span>
+                                    <span class="bs-stepper-label">Confirmation</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bs-stepper-content">
+                            <div class="container">
+                                <div id="staff" class="bs-stepper-pane fade" role="tabpanel" aria-labelledby="staff-trigger">
+                                    <!-- Staff-area start -->
+                                    <div class="staff-area pt-4">
+                                        <div class="section-title title-center mb-40">
+                                            <h3 class="title mb-20">Find Or Choose Your Staff</h3>
+                                            <div class="search-inline-form w-75 w-sm-100 mx-auto">
+                                                <form action="#">
+                                                    <div class="input-inline">
+                                                        <input type="search" class="form-control" placeholder="Enter staff name...">
+                                                        <button class="btn btn-lg btn-primary btn-gradient no-animation icon-start" type="button" aria-label="Find Now">
+                                                            <i class="far fa-search"></i>
+                                                            Find Now
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="swiper staff-slider">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="card radius-md">
+                                                        <figure class="card-img">
+                                                            <a href="javaScript:void(0)" onclick="bookingStepper.next()" target="_self" title="Image" class="lazy-container ratio ratio-2-3">
+                                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/staff/staff-1.jpg" alt="Staff">
+                                                            </a>
+                                                        </figure>
+                                                        <div class="card-details text-center p-20">
+                                                            <h5 class="card-title mb-0"><a href="javaScript:void(0)" onclick="bookingStepper.next()" target="_self" title="Staff Name">Oliver Butler</a></h5>
+                                                            <span class="card-category font-sm">user0123@gmail.com</span>
+                                                            <a href="javaScript:void(0)" class="btn-text color-primary mt-10" title="Select Staff" target="_self">Select Staff</a>
+                                                        </div>
+                                                    </div><!-- card -->
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="card radius-md">
+                                                        <figure class="card-img">
+                                                            <a href="javaScript:void(0)" onclick="bookingStepper.next()" target="_self" title="Image" class="lazy-container ratio ratio-2-3">
+                                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/staff/staff-2.jpg" alt="Staff">
+                                                            </a>
+                                                        </figure>
+                                                        <div class="card-details text-center p-20">
+                                                            <h5 class="card-title mb-0"><a href="javaScript:void(0)" onclick="bookingStepper.next()" target="_self" title="Staff Name">Oliver Butler</a></h5>
+                                                            <span class="card-category font-sm">user0123@gmail.com</span>
+                                                            <a href="javaScript:void(0)" class="btn-text color-primary mt-10" title="Select Staff" target="_self">Select Staff</a>
+                                                        </div>
+                                                    </div><!-- card -->
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="card radius-md">
+                                                        <figure class="card-img">
+                                                            <a href="javaScript:void(0)" onclick="bookingStepper.next()" target="_self" title="Image" class="lazy-container ratio ratio-2-3">
+                                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/staff/staff-4.jpg" alt="Staff">
+                                                            </a>
+                                                        </figure>
+                                                        <div class="card-details text-center p-20">
+                                                            <h5 class="card-title mb-0"><a href="javaScript:void(0)" onclick="bookingStepper.next()" target="_self" title="Staff Name">Oliver Butler</a></h5>
+                                                            <span class="card-category font-sm">user0123@gmail.com</span>
+                                                            <a href="javaScript:void(0)" class="btn-text color-primary mt-10" title="Select Staff" target="_self">Select Staff</a>
+                                                        </div>
+                                                    </div><!-- card -->
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="card radius-md">
+                                                        <figure class="card-img">
+                                                            <a href="javaScript:void(0)" onclick="bookingStepper.next()" target="_self" title="Image" class="lazy-container ratio ratio-2-3">
+                                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/staff/staff-3.jpg" alt="Staff">
+                                                            </a>
+                                                        </figure>
+                                                        <div class="card-details text-center p-20">
+                                                            <h5 class="card-title mb-0"><a href="javaScript:void(0)" onclick="bookingStepper.next()" target="_self" title="Staff Name">Oliver Butler</a></h5>
+                                                            <span class="card-category font-sm">user0123@gmail.com</span>
+                                                            <a href="javaScript:void(0)" class="btn-text color-primary mt-10" title="Select Staff" target="_self">Select Staff</a>
+                                                        </div>
+                                                    </div><!-- card -->
+                                                </div>
+                                            </div>
+                                            <div class="swiper-pagination position-static mt-10" id="staff-slider-pagination"></div>
+                                        </div>
+                                        <div class="text-center mt-10">
+                                            <a href="javaScript:void(0)" class="btn-text color-primary icon-end" onclick="bookingStepper.next()" target="_self" title="Next Step">Next Step <i class="fal fa-long-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <!-- Staff-area end -->
+                                </div>
+                                <div id="time" class="bs-stepper-pane fade" role="tabpanel" aria-labelledby="time-trigger">
+                                    <div class="calender-area pt-4">
+                                        <div class="section-title title-center mb-40">
+                                            <h3 class="title">Set Your Available Time</h3>
+                                        </div>
+                                        <div class="booking-calendar mb-30"></div>
+                                        <div class="booking-time">
+                                            <h6 class="text-center mb-20">Our Available Schedule For You</h6>
+                                            <div class="swiper booking-time-slider">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-scrollbar position-static mt-10"></div>
+                                            </div>
+                                        </div>
+                                        <div class="btn-groups justify-content-center w-100 mt-20">
+                                            <a href="javaScript:void(0)" class="btn-text color-primary icon-start" onclick="bookingStepper.previous()" target="_self" title="Next Step"><i class="fal fa-long-arrow-left"></i>Prev Step</a>
+                                            <a href="javaScript:void(0)" class="btn-text color-primary icon-end" onclick="bookingStepper.next()" target="_self" title="Next Step">Next Step <i class="fal fa-long-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="info" class="bs-stepper-pane fade" role="tabpanel" aria-labelledby="staff-trigger">
+                                    <!-- Authentication-area start -->
+                                    <div class="authentication-area pt-1">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="auth-form mt-3">
+                                                    <form>
+                                                        <div class="title mb-40">
+                                                            <span class="h3 mb-0">Sign In</span>
+                                                        </div>
+                                                        <div class="form-group mb-20">
+                                                            <label for="userName" class="form-label color-dark">Email/Username<span class="color-red">*</span></label>
+                                                            <input type="text" name="user_name" id="userName" class="form-control" placeholder="Username" required>
+                                                        </div>
+                                                        <div class="form-group mb-20">
+                                                            <label for="password" class="form-label color-dark">Password<span class="color-red">*</span></label>
+                                                            <div class="position-relative">
+                                                                <input type="password" name="password" id="password" class="form-control" placeholder="Enter password" required>
+                                                                <span data-toggle="#password" class="show-password-field">
+                                                                    <i class="show-icon"></i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <a href="javaScript:void(0)" class="btn btn-lg btn-primary btn-gradient" title="Sign In" target="_self">Sign In</a>
+                                                        <div class="link mt-20">
+                                                            Don't have an account? <a href="signup.html">Click Here</a> to Signup
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="btn-groups mt-30">
+                                                    <a href="javaScript:void(0)" class="btn-text color-primary icon-start" onclick="bookingStepper.previous()" target="_self" title="Next Step"><i class="fal fa-long-arrow-left"></i>Prev Step</a>
+                                                    <a href="javaScript:void(0)" class="btn-text color-primary icon-end" onclick="bookingStepper.next()" target="_self" title="Next Step">Next Step <i class="fal fa-long-arrow-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="auth-form mt-3">
+                                                    <form>
+                                                        <div class="title mb-40">
+                                                            <span class="h3 mb-0">Create Account</span>
+                                                        </div>
+                                                        <div class="row gx-3">
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group mb-20">
+                                                                    <label for="firstName" class="form-label color-dark">First Name<span class="color-red">*</span></label>
+                                                                    <input type="text" name="first_name" id="firstName" class="form-control" placeholder="Enter first name" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group mb-20">
+                                                                    <label for="lastName" class="form-label color-dark">Last Name</label>
+                                                                    <input type="text" name="last_name" id="lastName" class="form-control" placeholder="Enter last name" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="form-group mb-20">
+                                                                    <label for="email" class="form-label color-dark">Email Address<span class="color-red">*</span></label>
+                                                                    <input type="email" name="email" id="email" class="form-control" placeholder="Your email address" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="form-group mb-20">
+                                                                    <label for="password2" class="form-label color-dark">Password<span class="color-red">*</span></label>
+                                                                    <div class="position-relative">
+                                                                        <input type="password" name="password" id="password2" class="form-control" placeholder="Enter password" required>
+                                                                        <span data-toggle="#password" class="show-password-field">
+                                                                            <i class="show-icon"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12">
+                                                                <div class="custom-checkbox mb-20">
+                                                                    <input class="input-checkbox" type="checkbox" name="checkbox" id="checkbox5" value="">
+                                                                    <label class="form-check-label" for="checkbox5">I agree with Terms & Conditions <span class="color-red">*</span></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="javaScript:void(0)" class="btn btn-lg btn-primary btn-gradient" title="Create Account" target="_self">Create Account</a>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Authentication-area end -->
+                                </div>
+                                <div id="payment" class="bs-stepper-pane fade" role="tabpanel">
+                                    <div class="payment-area pt-4">
+                                        <div class="section-title title-center mb-40">
+                                            <h3 class="title col-lg-8">Choose Your Perfect Payment method For Booking</h3>
+                                        </div>
+                                        <div class="payment-form w-50 w-sm-100 mx-auto">
+                                            <form>
+                                                <div class="form-group">
+                                                    <select id="payment-gateway" class="form-control form-select">
+                                                        <option value="Paypal" selected="">Paypal</option>
+                                                        <option value="Flutterwave">Flutterwave</option>
+                                                        <option value="Razorpay">Razorpay</option>
+                                                        <option value="Paytm">Paytm</option>
+                                                        <option value="Paystack">Paystack</option>
+                                                        <option value="Flutterwave">Flutterwave</option>
+                                                        <option value="Razorpay">Razorpay</option>
+                                                        <option value="Paytm">Paytm</option>
+                                                        <option value="Paystack">Paystack</option>
+                                                    </select>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="btn-groups justify-content-center w-100 mt-20">
+                                            <a href="javaScript:void(0)" class="btn-text color-primary icon-start" onclick="bookingStepper.previous()" target="_self" title="Next Step"><i class="fal fa-long-arrow-left"></i>Prev Step</a>
+                                            <a href="javaScript:void(0)" class="btn-text color-primary icon-end" onclick="bookingStepper.next()" target="_self" title="Next Step">Next Step <i class="fal fa-long-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="confirm" class="bs-stepper-pane fade" role="tabpanel" aria-labelledby="confirm-trigger">
+                                    <div class="confirm-area pt-4">
+                                        <div class="section-title title-center mb-40">
+                                            <h3 class="title col-lg-8">congratulations Your Booking Completed</h3>
+                                        </div>
+                                        <div class="image text-center">
+                                            <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/book-success.png" alt="Image">
+                                        </div>
+                                        <div class="btn-groups justify-content-center w-100 mt-20">
+                                            <a href="javaScript:void(0)" class="btn-text color-primary icon-start" onclick="bookingStepper.previous()" target="_self" title="Next Step"><i class="fal fa-long-arrow-left"></i>Prev Step</a>
+                                            <a href="javaScript:void(0)" class="btn-text color-primary" title="Back to Home" target="_self" data-bs-dismiss="modal" aria-label="Close">Back to Home</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add Review Modal End -->
+
+    <!-- Jquery JS -->
+    <script src="../assets/js/vendors/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../assets/js/vendors/bootstrap.min.js"></script>
+    <!-- Data Tables JS -->
+    <script src="../assets/js/vendors/datatables.min.js"></script>
+    <!-- Date-range Picker JS -->
+    <script src="../assets/js/vendors/moment.min.js"></script>
+    <script src="../assets/js/vendors/daterangepicker.js"></script>
+    <!-- Nice Select JS -->
+    <script src="../assets/js/vendors/jquery.nice-select.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="../assets/js/vendors/jquery.magnific-popup.min.js"></script>
+    <!-- Calendar js -->
+    <script src="../assets/js/vendors/pignose.calendar.full.min.js"></script>
+    <!-- Swiper Slider JS -->
+    <script src="../assets/js/vendors/swiper-bundle.min.js"></script>
+    <!-- Lazysizes -->
+    <script src="../assets/js/vendors/lazysizes.min.js"></script>
+    <!-- Noui Range Slider JS -->
+    <script src="../assets/js/vendors/nouislider.min.js"></script>
+    <!-- Twinmax JS -->
+    <script src="../assets/js/vendors/tweenMax.min.js"></script>
+    <!-- Simple Parallax JS -->
+    <script src="../assets/js/vendors/parallax.min.js"></script>
+    <!-- AOS JS -->
+    <script src="../assets/js/vendors/aos.min.js"></script>
+    <!-- Mouse Hover JS -->
+    <script src="../assets/js/vendors/mouse-hover-move.js"></script>
+    <!--====== Stepper js ======-->
+    <script src="../assets/js/vendors/bs-stepper.min.js"></script>
+    <!-- Main script JS -->
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+/* -----------------------------------------
+    Bootstrap Stepper CSS
+----------------------------------------- */
+.bs-stepper {
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+
+    .bs-stepper-header {
+        flex-wrap: nowrap;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        flex: 0 0 auto;
+        width: 100%;
+        margin-inline: auto;
+        z-index: 1;
+
+        &::-webkit-scrollbar {
+            height: 10px;
+            width: 0;
+            height: 0;
+        }
+    }
+
+    .step {
+        flex: 0 0 auto;
+        width: calc(100% / 5);
+        position: relative;
+        border-bottom: 2px solid transparent;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 1;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: calc(100% / 1.75);
+            right: 0;
+            width: 100%;
+            height: 1px;
+            border-bottom: 1px dashed var(--border-color);
+            z-index: -1;
+        }
+
+        &:first-child::before {
+            width: 50%;
+        }
+
+        &:last-child::before {
+            width: 50%;
+            right: unset;
+            left: 0;
+        }
+
+        &.active {
+            // border-bottom-color: var(--color-primary);
+        }
+
+
+        .bs-stepper-circle {
+            --size: 32px;
+            width: var(--size);
+            height: var(--size);
+            line-height: auto;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            padding: 0;
+            border: 1px solid var(--border-color);
+            background-color: var(--bg-white);
+            color: var(--color-primary);
+            font-size: var(--font-sm);
+        }
+
+        .h3{
+            line-height: 1;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-color: var(--color-primary);
+            -webkit-text-stroke-width: 1px;
+        }
+
+        .bs-stepper-label {
+            color: var(--text-dark);
+            font-size: var(--font-xsm);
+        }
+
+        .bs-stepper-label,
+        .bs-stepper-circle {
+            margin-bottom: 0;
+        }
+
+        .active .bs-stepper-circle {
+            color: var(--text-white);
+            background-color: var(--color-primary);
+        }
+
+        .active .bs-stepper-label {
+            color: var(--color-primary);
+        }
+    }
+
+    .step-trigger {
+        flex-direction: column;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+}
+
+.bs-stepper .content.fade,
+.bs-stepper-pane.fade {
+    transition: all 0.2s;
+    transform: translateY(1rem);
+}
+
+.bs-stepper .content.fade.active,
+.bs-stepper-pane.fade.active {
+    transform: translateY(0rem);
+}

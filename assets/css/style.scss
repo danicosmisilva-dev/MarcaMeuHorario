@@ -1,0 +1,74 @@
+
+/*-----------------------------------------------------------
+ * Template Name: Bookapp - Appointment Booking Html Template
+ * Author: KreativDev
+ * Author URI: https://themeforest.net/user/kreativdev
+ * Tag: booking, appointments, business, services, customizable, easy-setup, professional, user-friendly, booking-form, creative, fast-loading, SEO-optimized, booking-template,
+ * File Description : Bookapp is a responsive, modern HTML template for appointment booking, featuring easy customization, well-documented code, and an engaging design to boost traffic.
+ * version: 1.0.1
+
+ *------------------------------------------------------------
+
+ **	This files table contents are outlined below >>>>>
+
+ *******************************************
+ *******************************************
+ ** - Variables CSS
+ ** - Typography CSS
+ ** - Color CSS
+ ** - Button CSS
+ ** - Form CSS
+ ** - Lazyload CSS
+ ** - Nice Select CSS
+ ** - Preloader CSS
+ ** - Swiper Slider CSS
+ ** - Nav Tabs CSS
+ ** - Title CSS
+ ** - Animation CSS
+ ** - Social Link CSS
+ ** - Ratings CSS
+ ** - Price Range Slider CSS
+ ** - Modal CSS
+ ** - Bootstrap Stepper CSS
+ ** - Pignose Calender CSS
+ ** - Datepicker CSS
+ ** - Hero Banner CSS
+ ** - Banner CSS
+ ** - Category CSS
+ ** - Works CSS
+ ** - Product CSS
+ ** - Testimonial CSS
+ ** - Blog CSS
+ ** - Footer CSS
+ ** - Staff CSS
+*/
+
+/*---===========================
+    1. COMMON css 
+===========================---*/
+
+
+
+/* Google Fonts */
+// @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap');
+
+// scss-import-stack
+// Base
+@import "base/base";
+// Layout
+@import "layout/hero-banner";
+@import "layout/banner";
+@import "layout/category";
+@import "layout/works";
+@import "layout/product";
+@import "layout/testimonial";
+@import "layout/blog";
+@import "layout/footer";
+@import "layout/staff";
+// Pages
+@import url("header/header.css");
+@import url("header/header-2.css");
+@import url("home/home-1.css");
+@import url("home/home-2.css");
+@import url("home/home-3.css");
+@import url("pages/inner-pages.css");

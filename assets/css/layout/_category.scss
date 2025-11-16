@@ -1,0 +1,174 @@
+/* -----------------------------------------
+    Category CSS
+----------------------------------------- */
+.category-area {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    .card {
+
+        &-image {
+            position: relative;
+        }
+
+        &-icon {
+            --size: 75px;
+            width: var(--size);
+            height: var(--size);
+            display: grid;
+            place-items: center;
+            font-size: 34px;
+            color: var(--text-white);
+            background-color: var(--color-primary);
+            background-image: var(--gradient-1);
+            box-shadow: 0 15px 30px -12px rgba($color: var(--color-primary-rgb), $alpha: .5);
+
+            i {
+                display: block;
+                transform: translateZ(0);
+                backface-visibility: hidden;
+                transition-duration: 0.5s;
+            }
+        }
+
+        &:hover {
+            .card-icon {
+                i {
+                    transform: scale(1.2);
+                    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+                }
+            }
+
+            .card-title {
+                color: var(--color-primary);
+            }
+        }
+    }
+}
+
+.category-area.category-1 {
+    $colors: (
+        "1"#CB0A38 #FBAEBB,
+        "2"#FF512F #F2C94C,
+        "3"#021B79 #87C3FF,
+        "4"#3425AF #C56CD6,
+        "5"#036CDA #15F5FD,
+        "6"#429421 #B3EB50,
+        "7"#E74C3C #CB0A38,
+        "8"#3C8CE7 #FF512F,
+        "9"#FFAA85 #021B79,
+        "10"#3C8CE7 #021B79
+        );
+
+    @each $i, $color1, $color2 in $colors {
+        .swiper-slide:nth-child(#{$i}) {
+            .card {
+                &-icon {
+                    background-color: $color1;
+                    background-image: linear-gradient(-35deg, $color1 0%, $color2 100%);
+                    box-shadow: 0 15px 30px -12px rgba($color: $color1, $alpha: .7);
+                }
+                &:hover{
+                    .card-title {
+                        color: $color1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.category-area.category-2 {
+    .swiper-slide{
+        .card {
+            padding: 20px 30px;
+            transform: rotateZ(-10deg);
+            border-radius: 50% / 10%;
+            transition: transform .3s;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 10%;
+                bottom: 10%;
+                right: -5%;
+                left: -5%;
+                background: inherit;
+                border-radius: 5% / 50%;
+                z-index: -1;
+            }
+        }
+        .bg-shape {
+            position: absolute;
+            left: 30px;
+            bottom: -30px;
+            width: calc(100% - 30px);
+            height: calc(100% - 30px);
+            background-color: var(--color-primary);
+            background-size: cover;
+            border-radius: 50% / 10%;
+            text-indent: .1em;
+            transition: transform .3s;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 10%;
+                bottom: 10%;
+                right: -5%;
+                left: -5%;
+                background: inherit;
+                background-size: cover;
+                border-radius: 5% / 50%;
+            }
+        }
+    }
+    .swiper-slide {
+        padding: 20px 30px 0 20px;
+        transform: scale(.75);
+        transition: all .3s;
+
+        &-active {
+            transform: scale(1);
+        }
+
+        &-next, &-prev {
+            transform: scale(.85);
+        }
+
+        &-prev {
+            .card {
+                transform: rotateZ(0);
+            }
+            .bg-shape{
+                transform: rotateZ(10deg);
+                background-color: #FDBF50;
+            }
+        }
+        &-next {
+            .card {
+                transform: rotateZ(0);
+            }
+            .bg-shape{
+                transform: rotateZ(-10deg);
+                background-color: #50A0FD;
+            }
+        }
+        &-duplicate:not(&-prev) {
+            .bg-shape{
+                transform: rotateZ(-10deg);
+                background-color: #54D9DA;
+            }
+        }
+    }
+    .swiper-slide:not(.swiper-slide-active, .swiper-slide-next, .swiper-slide-prev, .swiper-slide-duplicate) {
+        .card {
+            transform: rotateZ(10deg);
+        }
+        .bg-shape{
+            transform: rotateZ(10deg);
+            background-color: #0EFFCB;
+        }
+    }
+}

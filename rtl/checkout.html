@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="KreativDev">
+
+    <!-- Title -->
+    <title>Bookapp - Appointment Booking Html Template</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/images/logo/fav.png" type="image/x-icon">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/vendors/bootstrap.min.css">
+    <!-- Data Tables CSS -->
+    <link rel="stylesheet" href="../assets/css/vendors/datatables.min.css">
+    <!-- Fontawesome Icon CSS -->
+    <link rel="stylesheet" href="../assets/fonts/fontawesome/css/all.min.css">
+    <!-- Icomoon Icon CSS -->
+    <link rel="stylesheet" href="../assets/fonts/icomoon/style.css">
+    <!-- Date-range Picker -->
+    <link rel="stylesheet" href="../assets/css/vendors/daterangepicker.css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="../assets/css/vendors/magnific-popup.min.css">
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="../assets/css/vendors/swiper-bundle.min.css">
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="../assets/css/vendors/nice-select.css">
+    <!-- NoUi Range Slider -->
+    <link rel="stylesheet" href="../assets/css/vendors/nouislider.min.css">
+    <!--====== Stepper css ======-->
+    <link rel="stylesheet" href="../assets/css/vendors/bs-stepper.min.css">
+    <!--====== calendar css ======-->
+    <link rel="stylesheet" href="../assets/css/vendors/pignose.calendar.min.css">
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="../assets/css/vendors/aos.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="../assets/css/vendors/animate.min.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- RTL Style CSS -->
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+
+<body class="theme-color-1">
+    <!-- Preloader start -->
+    <div id="preLoader">
+        <div class="loader"></div>
+    </div>
+    <!-- Preloader end -->
+
+    <!-- Header-area start -->
+    <header class="header-area header-1 bg-white pt-0" data-aos="fade-down">
+        <!-- Start mobile menu -->
+        <div class="mobile-menu">
+            <div class="container">
+                <div class="mobile-menu-wrapper"></div>
+            </div>
+        </div>
+        <!-- End mobile menu -->
+
+        <div class="main-responsive-nav">
+            <div class="container">
+                <!-- Mobile Logo -->
+                <div class="logo">
+                    <a href="index.html" target="_self" title="Superv">
+                        <img src="../assets/images/logo/logo-1.png" alt="Brand logo">
+                    </a>
+                </div>
+                <!-- Menu toggle button -->
+                <button class="menu-toggler" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="main-navbar">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html" target="_self" title="Superv">
+                        <img src="../assets/images/logo/logo-1.png" alt="Brand Logo">
+                    </a>
+                    <!-- Navigation items -->
+                    <div class="collapse navbar-collapse">
+                        <ul id="mainMenu" class="navbar-nav mobile-item mx-auto">
+                            <li class="nav-item">
+                                <a href="#home" class="nav-link toggle">Home <i class="fal fa-plus"></i></a>
+                                <ul class="menu-dropdown">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home Demo 1</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index-2.html">Home Demo 2</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index-3.html">Home Demo 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link toggle" href="#services">Services<i class="fal fa-plus"></i></a>
+                                <ul class="menu-dropdown">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="services.html">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="service-details.html">Service Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link toggle" href="#vendors">Vendors<i class="fal fa-plus"></i></a>
+                                <ul class="menu-dropdown">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="vendors.html">Vendors</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="vendor-details.html">Vendor Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link toggle" href="#pages">Pages<i class="fal fa-plus"></i></a>
+                                <ul class="menu-dropdown">
+                                    <li class="nav-item">
+                                        <a class="nav-link toggle" href="javaScript:void(0)">My Account<i class="fal fa-plus"></i></a>
+                                        <ul class="menu-dropdown">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="dashboard.html">Dashboard</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="order.html">Order List</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="order-details.html">Order Details</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="profile.html">Profile</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="login.html">Login</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="signup.html">Signup</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="reset-password.html">Reset Password</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="forgot-password.html">Forgot Password</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="wishlist.html">Wishlist</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="checkout.html">Checkout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link toggle" href="#blogs">Blog<i class="fal fa-plus"></i></a>
+                                <ul class="menu-dropdown">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="blogs.html">Blogs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="blog-details.html">Blog Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="more-option mobile-item">
+                        <div class="item">
+                            <div class="language">
+                                <select class="niceselect">
+                                    <option value="1">Eng</option>
+                                    <option value="2">Chi</option>
+                                    <option value="3">Fre</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="login.html" class="btn btn-md btn-primary btn-gradient icon-start" title="Login" target="_self"><i class="fal fa-sign-in-alt"></i> Login</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header-area end -->
+
+    <!-- Page title start-->
+    <div class="page-title-area bg-img bg-cover" data-bg-image="../assets/images/page-title-bg-1.png">
+        <div class="container">
+            <div class="content">
+                <h2>Checkout</h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Page title end-->
+
+    <!-- Checkout-area start -->
+    <div class="shopping-area pt-100 pb-60">
+        <div class="container">
+            <form action="#">
+                <div class="row gx-xl-5">
+                    <div class="col-lg-8">
+                        <div class="billing-details">
+                            <h4 class="mb-20">Billing Details</h4>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group mb-30">
+                                        <label for="firstName">First Name*</label>
+                                        <input id="firstName" type="text" class="form-control" name="firstName"
+                                            placeholder="First Name" required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group mb-30">
+                                        <label for="lastName">Last Name*</label>
+                                        <input id="lastName" type="text" class="form-control" name="lastName"
+                                            placeholder="Last Name" required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group mb-30">
+                                        <label for="phone">Phone Number*</label>
+                                        <input id="phone" type="text" class="form-control" name="phone"
+                                            placeholder="Phone Number" required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group mb-30">
+                                        <label for="email">Email Address*</label>
+                                        <input id="email" type="email" class="form-control" name="email"
+                                            placeholder="Email Address" required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group mb-30">
+                                        <label for="company_name2">Company Name</label>
+                                        <input id="company_name2" type="text" class="form-control" name="company_name"
+                                            placeholder="Company Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <div class="form-group mb-30">
+                                        <label for="address">Street Address</label>
+                                        <input id="address" type="text" class="form-control" name="address"
+                                            placeholder="Street Address">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group mb-30">
+                                        <label for="city">City *</label>
+                                        <input id="city" type="text" class="form-control" name="city" placeholder="City"
+                                            required="">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group mb-30">
+                                        <label for="district">State</label>
+                                        <input id="district" type="text" class="form-control" name="district"
+                                            placeholder="State">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group mb-30">
+                                        <label for="post_code">Postcode/Zip</label>
+                                        <input id="post_code" type="text" class="form-control" name="post_code"
+                                            placeholder="Post Code">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group mb-30">
+                                        <label>Country *</label>
+                                        <select class="niceselect form-control">
+                                            <option data-display="Select an Option">Select an option...</option>
+                                            <option value="AX">Aland Islands</option>
+                                            <option value="AF">Afghanistan</option>
+                                            <option value="AL">Albania</option>
+                                            <option value="DZ">Algeria</option>
+                                            <option value="AD">Andorra</option>
+                                            <option value="AO">Angola</option>
+                                            <option value="AI">Anguilla</option>
+                                            <option value="AQ">Antarctica</option>
+                                            <option value="AG">Antigua and Barbuda</option>
+                                            <option value="AR">Argentina</option>
+                                            <option value="AM">Armenia</option>
+                                            <option value="AW">Aruba</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ship-details mb-10">
+                            <div class="form-group mb-20">
+                                <div class="custom-checkbox">
+                                    <input class="input-checkbox" type="checkbox" name="checkbox">
+                                    <label>
+                                        <a class="form-check-label" data-bs-toggle="collapse" data-target="#collapseAddress" href="#collapseAddress" aria-controls="collapseAddress"> <span>Ship to a different address?</span></a>
+                                    </label>
+                                </div>
+                            </div>
+                            <div id="collapseAddress" class="collapse">
+                                <h4 class="mb-20">Shipping Details</h4>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-30">
+                                            <label for="firstName2">First Name*</label>
+                                            <input id="firstName2" type="text" class="form-control" name="firstName"
+                                                placeholder="First Name" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-30">
+                                            <label for="lastName2">Last Name*</label>
+                                            <input id="lastName2" type="text" class="form-control" name="lastName"
+                                                placeholder="Last Name" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group mb-30">
+                                            <label for="phone2">Phone Number*</label>
+                                            <input id="phone2" type="text" class="form-control" name="phone"
+                                                placeholder="Phone Number" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-30">
+                                            <label for="email2">Email Address*</label>
+                                            <input id="email2" type="email" class="form-control" name="email"
+                                                placeholder="Email Address" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-30">
+                                            <label for="company_name">Company Name</label>
+                                            <input id="company_name" type="text" class="form-control" name="company_name"
+                                                placeholder="Company Name">
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-12">
+                                        <div class="form-group mb-30">
+                                            <label for="address2">Street Address</label>
+                                            <input id="address2" type="text" class="form-control" name="address"
+                                                placeholder="Street Address">
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-30">
+                                            <label for="city2">City *</label>
+                                            <input id="city2" type="text" class="form-control" name="city" placeholder="City"
+                                                required="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-30">
+                                            <label for="district2">State</label>
+                                            <input id="district2" type="text" class="form-control" name="district"
+                                                placeholder="State">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-30">
+                                            <label for="post_code2">Postcode/Zip</label>
+                                            <input id="post_code2" type="text" class="form-control" name="post_code"
+                                                placeholder="Post Code">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-30">
+                                            <label>Country *</label>
+                                            <select class="niceselect form-control">
+                                                <option data-display="Select an Option">Select an option...</option>
+                                                <option value="AX">Aland Islands</option>
+                                                <option value="AF">Afghanistan</option>
+                                                <option value="AL">Albania</option>
+                                                <option value="DZ">Algeria</option>
+                                                <option value="AD">Andorra</option>
+                                                <option value="AO">Angola</option>
+                                                <option value="AI">Anguilla</option>
+                                                <option value="AQ">Antarctica</option>
+                                                <option value="AG">Antigua and Barbuda</option>
+                                                <option value="AR">Argentina</option>
+                                                <option value="AM">Armenia</option>
+                                                <option value="AW">Aruba</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="order-summery form-block border radius-md mb-30">
+                            <h4>Package Summary</h4>
+                            <table class="shopping-table table-responsive">
+                                <tbody>
+                                    <tr class="item">
+                                        <td class="product ps-0">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <figure class="product-img">
+                                                    <a href="#" target="_self" title="Link" class="lazy-container radius-sm ratio ratio-3-4">
+                                                        <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/services/service-1.png" alt="Product">
+                                                    </a>
+                                                </figure>
+                                                <div class="product-desc">
+                                                    <h6>
+                                                        <a class="product-title" target="_self" title="Link" href="service-details.html">Barber Shop</a>
+                                                    </h6>
+                                                    <div class="ratings">
+                                                       <div class="rate">
+                                                            <div class="rating-icon"></div>
+                                                       </div>
+                                                       <span class="ratings-total">(4.5)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="color-primary">
+                                            <span>x3</span>
+                                        </td>
+                                        <td class="price">
+                                            <span>$120 </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="item">
+                                        <td class="product ps-0">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <figure class="product-img">
+                                                    <a href="#" target="_self" title="Link" class="lazy-container radius-sm ratio ratio-3-4">
+                                                        <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/services/service-2.png" alt="Product">
+                                                    </a>
+                                                </figure>
+                                                <div class="product-desc">
+                                                    <h6>
+                                                        <a class="product-title" target="_self" title="Link" href="service-details.html">Plumber</a>
+                                                    </h6>
+                                                    <div class="ratings">
+                                                       <div class="rate">
+                                                            <div class="rating-icon"></div>
+                                                       </div>
+                                                       <span class="ratings-total">(4.5)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="color-primary">
+                                            <span>x3</span>
+                                        </td>
+                                        <td class="price">
+                                            <span>$120 </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="item">
+                                        <td class="product ps-0">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <figure class="product-img">
+                                                    <a href="#" target="_self" title="Link" class="lazy-container radius-sm ratio ratio-3-4">
+                                                        <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/services/service-3.png" alt="Product">
+                                                    </a>
+                                                </figure>
+                                                <div class="product-desc">
+                                                    <h6>
+                                                        <a class="product-title" target="_self" title="Link" href="service-details.html">Doctor</a>
+                                                    </h6>
+                                                    <div class="ratings">
+                                                       <div class="rate">
+                                                            <div class="rating-icon"></div>
+                                                       </div>
+                                                       <span class="ratings-total">(4.5)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="color-primary">
+                                            <span>x3</span>
+                                        </td>
+                                        <td class="price">
+                                            <span>$120 </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="order-summary form-block border radius-md mb-30">
+                            <h4 class="pb-20 mb-20 border-bottom">Order Summary</h4>
+                            <ul class="product-list">
+                                <li class="d-flex justify-content-between">
+                                    <span class="font-medium color-dark">Barber Shop</span>
+                                    <span class="price">$120.00</span>
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <span class="font-medium color-dark">Plumber</span>
+                                    <span class="price">$23.00</span>
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <span class="font-medium color-dark">Doctor</span>
+                                    <span class="price">$19.00</span>
+                                </li>
+                            </ul>
+                            <hr>
+                            <div class="sub-total d-flex justify-content-between">
+                                <h6>Sub Total</h6>
+                                <span class="price">$55.00</span>
+                            </div>
+                            <ul class="service-charge-list">
+                                <li class="d-flex justify-content-between">
+                                    <span class="font-medium color-dark">Service Charge(10%) </span>
+                                    <span class="price">$4.00</span>
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <span class="font-medium color-dark">Delivery Charge </span>
+                                    <span class="price">$4.00</span>
+                                </li>
+                            </ul>
+                            <hr>
+                            <div class="total d-flex justify-content-between">
+                                <h6>Total</h6>
+                                <span class="price">$63.00</span>
+                            </div>
+                        </div>
+                        <div class="order-payment form-block border radius-md mb-30">
+                            <h4 class="mb-20">Payment Method</h4>
+                            <div class="form-group mb-30">
+                                <select id="payment-gateway" class="niceselect form-control">
+                                    <option value="" selected="">Choose an option</option>
+                                    <option value="Flutterwave">Flutterwave</option>
+                                    <option value="Razorpay">Razorpay</option>
+                                    <option value="Paytm">Paytm</option>
+                                    <option value="Paystack">Paystack</option>
+                                    <option value="Flutterwave">Flutterwave</option>
+                                    <option value="Razorpay">Razorpay</option>
+                                    <option value="Paytm">Paytm</option>
+                                    <option value="Paystack">Paystack</option>
+                                </select>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-lg btn-primary btn-gradient w-100" type="button" aria-label="button">Place Order</button>
+                            </div>
+                        </div>
+                        <div class="form-wrapper mb-40 bg-white shadow-md border radius-md p-1">
+                            
+                            <div class="input-inline">
+                                <input type="text" name="coupon" class="form-control border-0 radius-md" placeholder="Enter Coupon Code">
+                                <button class="btn btn-lg btn-primary btn-gradient no-animation radius-md icon-start" type="button" aria-label="Search">Apply</button>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Checkout-area end -->
+    
+    <!-- Footer-area start -->
+    <footer class="footer-area mt-30 bg-primary-light">
+        <div class="go-top"><i class="fal fa-long-arrow-up"></i></div>
+        <div class="footer-top pt-100 pb-70 text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-5" data-aos="fade-up">
+                        <div class="navbar-brand mt-10">
+                            <span></span>
+                            <a href="index.html" target="_self" title="Link">
+                                <img src="../assets/images/logo/logo-1.png" alt="Brand Logo">
+                            </a>
+                            <span></span>
+                        </div>
+                        <ul class="info-list mt-20">
+                            <li>
+                                <a href="mailto:live@example.com">live@example.com</a>
+                            </li>
+                            <li>
+                                <a href="tel:9992233555">+999 22 33 5555</a>
+                            </li>
+                        </ul>
+                        <div class="social-link mt-20">
+                            <a href="https://www.instagram.com/" target="_blank" title="instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.dribbble.com/" target="_blank" title="dribbble"><i class="fab fa-dribbble"></i></a>
+                            <a href="https://www.twitter.com/" target="_blank" title="twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank" title="youtube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <div class="newsletter-form mx-auto mt-30">
+                            <form id="newsletterForm">
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Enter email here..." type="text" name="EMAIL" required="" autocomplete="off">
+                                    <button class="btn btn-md btn-primary btn-gradient no-animation" type="submit">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                        <ul class="footer-links list-unstyled mt-30">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link" target="_self" title="link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about-us.html" class="nav-link" target="_self" title="link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="services.html" class="nav-link" target="_self" title="link">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="vendors.html" class="nav-link" target="_self" title="link">Shops</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link" target="_self" title="link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right-area border-top ptb-30">
+            <div class="container">
+                <div class="copy-right-content">
+                    <span>
+                        Copyright <i class="fal fa-copyright"></i><span id="footerDate"></span> <a href="index.html" target="_self" title="Bookapp" class="color-primary">Bookapp</a>. All Rights Reserved
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer-area end-->
+
+    <!-- Add Review Modal Start -->
+    <div class="modal booking-modal fade" id="makeBooking" tabindex="-1"  aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-md-down">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fal fa-times"></i></button>
+                <div class="modal-body">
+                    <div class="bs-stepper" id="booking-stepper">
+                        <div class="bs-stepper-header" role="tablist">
+                            <!-- your steps here -->
+                            <div class="step" data-target="#staff">
+                                <button type="button" class="step-trigger" role="tab" aria-controls="staff" id="staff-trigger">
+                                    <span class="h3 mb-1">01</span>
+                                    <span class="bs-stepper-circle"><i class="fal fa-calendar-check"></i></span>
+                                    <span class="bs-stepper-label">Staff</span>
+                                </button>
+                            </div>
+                            <div class="step" data-target="#time">
+                                <button type="button" class="step-trigger" role="tab" aria-controls="time" id="time-trigger">
+                                    <span class="h3 mb-1">02</span>
+                                    <span class="bs-stepper-circle"><i class="fal fa-calendar-check"></i></span>
+                                    <span class="bs-stepper-label">Time</span>
+                                </button>
+                            </div>
+                            <div class="step" data-target="#info">
+                                <button type="button" class="step-trigger" role="tab" aria-controls="info" id="info-trigger">
+                                    <span class="h3 mb-1">03</span>
+                                    <span class="bs-stepper-circle"><i class="fal fa-calendar-check"></i></span>
+                                    <span class="bs-stepper-label">Information</span>
+                                </button>
+                            </div>
+                            <div class="step" data-target="#payment">
+                                <button type="button" class="step-trigger" role="tab" aria-controls="payment" id="payment-trigger">
+                                    <span class="h3 mb-1">04</span>
+                                    <span class="bs-stepper-circle"><i class="fal fa-calendar-check"></i></span>
+                                    <span class="bs-stepper-label">Payment</span>
+                                </button>
+                            </div>
+                            <div class="step" data-target="#confirm">
+                                <button type="button" class="step-trigger" role="tab" aria-controls="confirm" id="confirm-trigger">
+                                    <span class="h3 mb-1">05</span>
+                                    <span class="bs-stepper-circle"><i class="fal fa-calendar-check"></i></span>
+                                    <span class="bs-stepper-label">Confirmation</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bs-stepper-content">
+                            <div class="container">
+                                <div id="staff" class="bs-stepper-pane fade" role="tabpanel" aria-labelledby="staff-trigger">
+                                    <!-- Staff-area start -->
+                                    <div class="staff-area pt-4">
+                                        <div class="section-title title-center mb-40">
+                                            <h3 class="title mb-20">Find Or Choose Your Staff</h3>
+                                            <div class="search-inline-form w-75 w-sm-100 mx-auto">
+                                                <form action="#">
+                                                    <div class="input-inline">
+                                                        <input type="search" class="form-control" placeholder="Enter staff name...">
+                                                        <button class="btn btn-lg btn-primary btn-gradient no-animation icon-start" type="button" aria-label="Find Now">
+                                                            <i class="far fa-search"></i>
+                                                            Find Now
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="swiper staff-slider">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="card radius-md">
+                                                        <figure class="card-img">
+                                                            <a href="javaScript:void(0)" onclick="bookingStepper.next()" target="_self" title="Image" class="lazy-container ratio ratio-2-3">
+                                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/staff/staff-1.jpg" alt="Staff">
+                                                            </a>
+                                                        </figure>
+                                                        <div class="card-details text-center p-20">
+                                                            <h5 class="card-title mb-0"><a href="javaScript:void(0)" onclick="bookingStepper.next()" target="_self" title="Staff Name">Oliver Butler</a></h5>
+                                                            <span class="card-category font-sm">user0123@gmail.com</span>
+                                                            <a href="javaScript:void(0)" class="btn-text color-primary mt-10" title="Select Staff" target="_self">Select Staff</a>
+                                                        </div>
+                                                    </div><!-- card --> 
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="card radius-md">
+                                                        <figure class="card-img">
+                                                            <a href="javaScript:void(0)" onclick="bookingStepper.next()" target="_self" title="Image" class="lazy-container ratio ratio-2-3">
+                                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/staff/staff-2.jpg" alt="Staff">
+                                                            </a>
+                                                        </figure>
+                                                        <div class="card-details text-center p-20">
+                                                            <h5 class="card-title mb-0"><a href="javaScript:void(0)" onclick="bookingStepper.next()" target="_self" title="Staff Name">Oliver Butler</a></h5>
+                                                            <span class="card-category font-sm">user0123@gmail.com</span>
+                                                            <a href="javaScript:void(0)" class="btn-text color-primary mt-10" title="Select Staff" target="_self">Select Staff</a>
+                                                        </div>
+                                                    </div><!-- card --> 
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="card radius-md">
+                                                        <figure class="card-img">
+                                                            <a href="javaScript:void(0)" onclick="bookingStepper.next()" target="_self" title="Image" class="lazy-container ratio ratio-2-3">
+                                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/staff/staff-4.jpg" alt="Staff">
+                                                            </a>
+                                                        </figure>
+                                                        <div class="card-details text-center p-20">
+                                                            <h5 class="card-title mb-0"><a href="javaScript:void(0)" onclick="bookingStepper.next()" target="_self" title="Staff Name">Oliver Butler</a></h5>
+                                                            <span class="card-category font-sm">user0123@gmail.com</span>
+                                                            <a href="javaScript:void(0)" class="btn-text color-primary mt-10" title="Select Staff" target="_self">Select Staff</a>
+                                                        </div>
+                                                    </div><!-- card --> 
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="card radius-md">
+                                                        <figure class="card-img">
+                                                            <a href="javaScript:void(0)" onclick="bookingStepper.next()" target="_self" title="Image" class="lazy-container ratio ratio-2-3">
+                                                                <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/staff/staff-3.jpg" alt="Staff">
+                                                            </a>
+                                                        </figure>
+                                                        <div class="card-details text-center p-20">
+                                                            <h5 class="card-title mb-0"><a href="javaScript:void(0)" onclick="bookingStepper.next()" target="_self" title="Staff Name">Oliver Butler</a></h5>
+                                                            <span class="card-category font-sm">user0123@gmail.com</span>
+                                                            <a href="javaScript:void(0)" class="btn-text color-primary mt-10" title="Select Staff" target="_self">Select Staff</a>
+                                                        </div>
+                                                    </div><!-- card --> 
+                                                </div>
+                                            </div>
+                                            <div class="swiper-pagination position-static mt-10" id="staff-slider-pagination"></div>
+                                        </div>
+                                        <div class="text-center mt-10">
+                                            <a href="javaScript:void(0)" class="btn-text color-primary icon-end" onclick="bookingStepper.next()" target="_self" title="Next Step">Next Step <i class="fal fa-long-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <!-- Staff-area end -->
+                                </div>
+                                <div id="time" class="bs-stepper-pane fade" role="tabpanel" aria-labelledby="time-trigger">
+                                    <div class="calender-area pt-4">
+                                        <div class="section-title title-center mb-40">
+                                            <h3 class="title">Set Your Available Time</h3>
+                                        </div>
+                                        <div class="booking-calendar mb-30"></div>
+                                        <div class="booking-time">
+                                            <h6 class="text-center mb-20">Our Available Schedule For You</h6>
+                                            <div class="swiper booking-time-slider">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-scrollbar position-static mt-10"></div>
+                                            </div>
+                                        </div>
+                                        <div class="btn-groups justify-content-center w-100 mt-20">
+                                            <a href="javaScript:void(0)" class="btn-text color-primary icon-start" onclick="bookingStepper.previous()" target="_self" title="Next Step"><i class="fal fa-long-arrow-left"></i>Prev Step</a>
+                                            <a href="javaScript:void(0)" class="btn-text color-primary icon-end" onclick="bookingStepper.next()" target="_self" title="Next Step">Next Step <i class="fal fa-long-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="info" class="bs-stepper-pane fade" role="tabpanel" aria-labelledby="staff-trigger">
+                                    <!-- Authentication-area start -->
+                                    <div class="authentication-area pt-1">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="auth-form mt-3">
+                                                    <form>
+                                                        <div class="title mb-40">
+                                                            <span class="h3 mb-0">Sign In</span>
+                                                        </div>
+                                                        <div class="form-group mb-20">
+                                                            <label for="userName" class="form-label color-dark">Email/Username<span class="color-red">*</span></label>
+                                                            <input type="text" name="user_name" id="userName" class="form-control" placeholder="Username" required>
+                                                        </div>
+                                                        <div class="form-group mb-20">
+                                                            <label for="password" class="form-label color-dark">Password<span class="color-red">*</span></label>
+                                                            <div class="position-relative">
+                                                                <input type="password" name="password" id="password" class="form-control" placeholder="Enter password" required>
+                                                                <span data-toggle="#password" class="show-password-field">
+                                                                    <i class="show-icon"></i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <a href="javaScript:void(0)" class="btn btn-lg btn-primary btn-gradient" title="Sign In" target="_self">Sign In</a>
+                                                        <div class="link mt-20">
+                                                            Don't have an account? <a href="signup.html">Click Here</a> to Signup
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="btn-groups mt-30">
+                                                    <a href="javaScript:void(0)" class="btn-text color-primary icon-start" onclick="bookingStepper.previous()" target="_self" title="Next Step"><i class="fal fa-long-arrow-left"></i>Prev Step</a>
+                                                    <a href="javaScript:void(0)" class="btn-text color-primary icon-end" onclick="bookingStepper.next()" target="_self" title="Next Step">Next Step <i class="fal fa-long-arrow-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="auth-form mt-3">
+                                                    <form>
+                                                        <div class="title mb-40">
+                                                            <span class="h3 mb-0">Create Account</span>
+                                                        </div>
+                                                        <div class="row gx-3">
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group mb-20">
+                                                                    <label for="firstName3" class="form-label color-dark">First Name<span class="color-red">*</span></label>
+                                                                    <input type="text" name="first_name" id="firstName3" class="form-control" placeholder="Enter first name" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group mb-20">
+                                                                    <label for="lastName2" class="form-label color-dark">Last Name</label>
+                                                                    <input type="text" name="last_name" id="lastName3" class="form-control" placeholder="Enter last name" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="form-group mb-20">
+                                                                    <label for="email3" class="form-label color-dark">Email Address<span class="color-red">*</span></label>
+                                                                    <input type="email" name="email" id="email3" class="form-control" placeholder="Your email address" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="form-group mb-20">
+                                                                    <label for="password2" class="form-label color-dark">Password<span class="color-red">*</span></label>
+                                                                    <div class="position-relative">
+                                                                        <input type="password" name="password" id="password2" class="form-control" placeholder="Enter password" required>
+                                                                        <span data-toggle="#password" class="show-password-field">
+                                                                            <i class="show-icon"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12">
+                                                                <div class="custom-checkbox mb-20">
+                                                                    <input class="input-checkbox" type="checkbox" name="checkbox" id="checkbox5" value="">
+                                                                    <label class="form-check-label" for="checkbox5">I agree with Terms & Conditions <span class="color-red">*</span></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="javaScript:void(0)" class="btn btn-lg btn-primary btn-gradient" title="Create Account" target="_self">Create Account</a>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Authentication-area end -->
+                                </div>
+                                <div id="payment" class="bs-stepper-pane fade" role="tabpanel">
+                                    <div class="payment-area pt-4">
+                                        <div class="section-title title-center mb-40">
+                                            <h3 class="title col-lg-8">Choose Your Perfect Payment method For Booking</h3>
+                                        </div>
+                                        <div class="payment-form w-50 w-sm-100 mx-auto">
+                                            <form>
+                                                <div class="form-group">
+                                                    <select id="payment-gateway2" class="form-control form-select">
+                                                        <option value="Paypal" selected="">Paypal</option>
+                                                        <option value="Flutterwave">Flutterwave</option>
+                                                        <option value="Razorpay">Razorpay</option>
+                                                        <option value="Paytm">Paytm</option>
+                                                        <option value="Paystack">Paystack</option>
+                                                        <option value="Flutterwave">Flutterwave</option>
+                                                        <option value="Razorpay">Razorpay</option>
+                                                        <option value="Paytm">Paytm</option>
+                                                        <option value="Paystack">Paystack</option>
+                                                    </select>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="btn-groups justify-content-center w-100 mt-20">
+                                            <a href="javaScript:void(0)" class="btn-text color-primary icon-start" onclick="bookingStepper.previous()" target="_self" title="Next Step"><i class="fal fa-long-arrow-left"></i>Prev Step</a>
+                                            <a href="javaScript:void(0)" class="btn-text color-primary icon-end" onclick="bookingStepper.next()" target="_self" title="Next Step">Next Step <i class="fal fa-long-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="confirm" class="bs-stepper-pane fade" role="tabpanel" aria-labelledby="confirm-trigger">
+                                    <div class="confirm-area pt-4">
+                                        <div class="section-title title-center mb-40">
+                                            <h3 class="title col-lg-8">congratulations Your Booking Completed</h3>
+                                        </div>
+                                        <div class="image text-center">
+                                            <img class="lazyload" src="../assets/images/placeholder.png" data-src="../assets/images/book-success.png" alt="Image">
+                                        </div>
+                                        <div class="btn-groups justify-content-center w-100 mt-20">
+                                            <a href="javaScript:void(0)" class="btn-text color-primary icon-start" onclick="bookingStepper.previous()" target="_self" title="Next Step"><i class="fal fa-long-arrow-left"></i>Prev Step</a>
+                                            <a href="javaScript:void(0)" class="btn-text color-primary" title="Back to Home" target="_self" data-bs-dismiss="modal" aria-label="Close">Back to Home</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add Review Modal End -->
+
+    <!-- Jquery JS -->
+    <script src="../assets/js/vendors/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../assets/js/vendors/bootstrap.min.js"></script>
+    <!-- Data Tables JS -->
+    <script src="../assets/js/vendors/datatables.min.js"></script>
+    <!-- Date-range Picker JS -->
+    <script src="../assets/js/vendors/moment.min.js"></script>
+    <script src="../assets/js/vendors/daterangepicker.js"></script>
+    <!-- Nice Select JS -->
+    <script src="../assets/js/vendors/jquery.nice-select.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="../assets/js/vendors/jquery.magnific-popup.min.js"></script>
+    <!-- Calendar js -->
+    <script src="../assets/js/vendors/pignose.calendar.full.min.js"></script>
+    <!-- Swiper Slider JS -->
+    <script src="../assets/js/vendors/swiper-bundle.min.js"></script>
+    <!-- Lazysizes -->
+    <script src="../assets/js/vendors/lazysizes.min.js"></script>
+    <!-- Noui Range Slider JS -->
+    <script src="../assets/js/vendors/nouislider.min.js"></script>
+    <!-- Twinmax JS -->
+    <script src="../assets/js/vendors/tweenMax.min.js"></script>
+    <!-- Simple Parallax JS -->
+    <script src="../assets/js/vendors/parallax.min.js"></script>
+    <!-- AOS JS -->
+    <script src="../assets/js/vendors/aos.min.js"></script>
+    <!-- Mouse Hover JS -->
+    <script src="../assets/js/vendors/mouse-hover-move.js"></script>
+    <!--====== Stepper js ======-->
+    <script src="../assets/js/vendors/bs-stepper.min.js"></script>
+    <!-- Main script JS -->
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
