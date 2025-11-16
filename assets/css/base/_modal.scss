@@ -1,0 +1,38 @@
+/* -----------------------------------------
+    Modal CSS
+----------------------------------------- */
+.modal {
+    --bs-modal-border-radius: 0;
+    --bs-border-color: var(--border-color);
+    --bs-modal-width: 800px;
+    .btn-close {
+        --size: 40px;
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        width: var(--size);
+        height: var(--size);
+        line-height: var(--size);
+        padding: 0;
+        opacity: 1;
+        background: var(--bg-white);
+        color: var(--color-primary);
+        text-align: center;
+        border-radius: 50%;
+        z-index: 1;
+        box-shadow: var(--shadow-round);
+    }
+
+    ::-webkit-scrollbar {
+        height: 5px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background-color: var(--bg-light);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 30px;
+        background: rgba($color: var(--color-dark-rgb), $alpha: .2);
+    }
+}

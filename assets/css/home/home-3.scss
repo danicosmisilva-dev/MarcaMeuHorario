@@ -1,0 +1,52 @@
+/*   
+    
+    * This file contains the styling for the Home Variation Three, this
+    is the file you need to edit to change the look of the
+    template.
+
+******************************************************
+*****************************************************/
+/* -----------------------------------------
+	Hero Banner CSS
+----------------------------------------- */
+
+.hero-banner {
+    &.hero-banner-3{
+        padding-top: 220px;
+
+        .banner-content {
+            max-width: 680px;
+        }
+
+        .shape {
+            img {
+                position: absolute;
+                z-index: -1;
+    
+                &.shape-1 {
+                    top: 22%;
+                    left: 12%;
+                    animation: moveLeftRight 10s linear infinite;
+                }
+    
+                &.shape-2 {
+                    bottom: 10%;
+                    left: 22%;
+                    animation: moveUpDown 5s linear infinite;
+                }
+    
+                &.shape-3 {
+                    bottom: 10%;
+                    right: 22%;
+                    animation: moveAround 20s linear infinite;
+                }
+    
+                &.shape-4 {
+                    top: 22%;
+                    right: 16%;
+                    animation: rotate 8s linear infinite;
+                }
+            }
+        }
+    }
+}

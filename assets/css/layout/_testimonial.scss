@@ -1,0 +1,68 @@
+/* -----------------------------------------
+    Testimonial CSS
+----------------------------------------- */
+.testimonial-area{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    .slider-item {
+        background-color: var(--bg-white);
+        border: 1px solid var(--border-color);
+        box-shadow: var(--shadow-md);
+        .client{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 25px 30px;
+            border-bottom: 1px dashed rgba($color: var(--color-white-rgb), $alpha: .2);
+        }
+        .quote {
+            position: relative;
+            padding: 25px 30px;
+        }
+
+        .text{
+            padding: 20px 0 20px;
+            padding-inline-start: 30px;
+            border-inline-start: 5px solid var(--color-primary);
+            @media #{$sm} {
+                padding-inline-start: 15px;
+            }
+        }
+
+        .icon{
+            position: absolute;
+            top: 25px;
+            left: 0;
+            right: 0;
+            margin-inline-start: 60px;
+            font-size: 62px;
+            line-height: 1;
+            color: rgba($color: var(--color-primary-rgb), $alpha: .10);
+        }
+
+        p{
+            margin-bottom: 0;
+        }
+
+        .client-img {
+            flex: 0 0 auto;
+            width: 60px;
+            margin-inline-end: 16px;
+        }
+    }
+
+    .quote-icon{
+        font-size: 16px;
+        color: var(--color-primary);
+    }
+
+    .swiper {
+        // overflow: unset;
+    }
+
+    .swiper-slide {
+        overflow: hidden;
+        padding-inline-start: 30px;
+    }
+}

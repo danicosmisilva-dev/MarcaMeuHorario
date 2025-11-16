@@ -1,0 +1,63 @@
+/* -----------------------------------------
+    Ratings CSS
+----------------------------------------- */
+.ratings {
+	display: flex;
+	align-items: center;
+    flex-wrap: wrap;
+	margin-inline-start: -3px;
+	.rate{
+		background-image: url(../images/rate-star.png);
+		background-position: 0 -13px;
+		background-repeat: repeat-x;
+		height: 13px;
+		transition: all 0.5s ease-out 0s;
+		width: 90px;
+	}
+	.rating-icon{
+		background-image: url(../images/rate-star.png);
+		background-position: 0 0;
+		background-repeat: repeat-x;
+		height: 13px;
+        width: 80%;
+	}
+	.ratings-total{
+		font-size: 12px;
+		line-height: 1;
+		margin-inline-start: 5px;
+		margin-top: 1px;
+	}
+
+	&.size-md {
+		.rate{
+			background-image: url(../images/rate-star-md.png);
+			background-position: 0 -15px;
+			height: 15px;
+			width: 115px;
+		}
+		.rating-icon{
+			background-image: url(../images/rate-star-md.png);
+			height: 15px;
+		}
+		.ratings-total{
+			font-size: 14px;
+			margin-top: 2px;
+		}
+	}
+	&.size-lg {
+		.rate{
+			background-image: url(../images/rate-star-lg.png);
+			background-position: 0 -20px;
+			height: 20px;
+			width: 145px;
+		}
+		.rating-icon{
+			background-image: url(../images/rate-star-lg.png);
+			height: 20px;
+		}
+		.ratings-total{
+			font-size: 16px;
+			margin-top: 3px;
+		}
+	}
+}

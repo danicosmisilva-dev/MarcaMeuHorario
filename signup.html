@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="KreativDev">
+
+    <!-- Title -->
+    <title>Bookapp - Appointment Booking Html Template</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/fav.png" type="image/x-icon">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css">
+    <!-- Data Tables CSS -->
+    <link rel="stylesheet" href="assets/css/vendors/datatables.min.css">
+    <!-- Fontawesome Icon CSS -->
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+    <!-- Icomoon Icon CSS -->
+    <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
+    <!-- Date-range Picker -->
+    <link rel="stylesheet" href="assets/css/vendors/daterangepicker.css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="assets/css/vendors/magnific-popup.min.css">
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css">
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="assets/css/vendors/nice-select.css">
+    <!-- NoUi Range Slider -->
+    <link rel="stylesheet" href="assets/css/vendors/nouislider.min.css">
+    <!--====== Stepper css ======-->
+    <link rel="stylesheet" href="assets/css/vendors/bs-stepper.min.css">
+    <!--====== calendar css ======-->
+    <link rel="stylesheet" href="assets/css/vendors/pignose.calendar.min.css">
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="assets/css/vendors/aos.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/vendors/animate.min.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body class="theme-color-1">
+    <!-- Preloader start -->
+    <div id="preLoader">
+        <div class="loader"></div>
+    </div>
+    <!-- Preloader end -->
+
+    <!-- Authentication-area start -->
+    <div class="authentication-area bg-light">
+        <div class="container">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-12">
+                    <div class="wrapper shadow-md radius-lg bg-white">
+                        <div class="row align-items-center">
+
+                            <div class="col-lg-6 bg-primary-light">
+                                <div class="content">
+                                    <div class="logo mb-3 p-30">
+                                        <a href="index.html" target="_self" title="Teeno"><img src="assets/images/logo/logo-1.png" alt="Logo"></a>
+                                    </div>
+                                    <div class="svg-image">
+                                        <img class="lazyload" src="assets/images/placeholder.png" data-src="assets/images/login.svg" alt="Image">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="main-form">
+                                    <a href="index.html" class="icon-link" title="Go back to home" target="_self"><i class="fal fa-home"></i></a>
+                                    <div class="title">
+                                        <h3 class="mb-30">Signup to Bookapp</h3>
+                                    </div>
+                                    <form id="#authForm">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group mb-20">
+                                                    <label for="userName" class="form-label color-dark">Username Name<span class="color-red">*</span></label>
+                                                    <input type="text" name="user_name" id="userName" class="form-control" placeholder="Username" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group mb-20">
+                                                    <label for="email" class="form-label color-dark">Email<span class="color-red">*</span></label>
+                                                    <input type="email" name="email" id="email" class="form-control" placeholder="Your email address" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group mb-20">
+                                                    <label for="password3" class="form-label color-dark">Password<span class="color-red">*</span></label>
+                                                    <div class="position-relative">
+                                                        <input type="password" name="password" id="password3" class="form-control" placeholder="Enter password" required>
+                                                        <span class="show-password-field">
+                                                            <i class="show-icon"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group mb-20">
+                                                    <label for="confirmPassword" class="form-label color-dark">Confirm Password<span class="color-red">*</span></label>
+                                                    <div class="position-relative">
+                                                        <input type="password" name="password" id="confirmPassword" class="form-control" placeholder="Confirm password" required>
+                                                        <span class="show-password-field">
+                                                            <i class="show-icon"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="custom-checkbox font-sm">
+                                                    <input class="input-checkbox" type="checkbox" name="checkbox" id="checkbox4" value="">
+                                                    <label class="form-check-label" for="checkbox4"><span> I agree with Teeno's <a href="terms-conditions.html">Terms & Conditions</a></span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center mt-20">
+                                            <button class="btn btn-lg btn-primary btn-gradient w-100" type="submit" aria-label="Signup">Signup</button>
+                                            <div class="link font-sm mt-15">
+                                                Already a member? <a href="login.html" target="_self" title="Login Now">Login Now</a> 
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Authentication-area end -->
+
+    <!-- Booking Modal Start -->
+    <div class="modal booking-modal fade" id="makeBooking" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-md-down">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fal fa-times"></i></button>
+                <div class="modal-body">
+                    <div class="bs-stepper" id="booking-stepper">
+                        <div class="bs-stepper-header" role="tablist">
+                            <!-- your steps here -->
+                            <div class="step" data-target="#staff">
+                                <button type="button" class="step-trigger" role="tab" aria-controls="staff" id="staff-trigger">
+                                    <span class="h3 mb-1">01</span>
+                                    <span class="bs-stepper-circle"><i class="fal fa-user-circle"></i></span>
+                                    <span class="bs-stepper-label">Staff</span>
+                                </button>
+                            </div>
+                            <div class="step" data-target="#time">
+                                <button type="button" class="step-trigger" role="tab" aria-controls="time" id="time-trigger">
+                                    <span class="h3 mb-1">02</span>
+                                    <span class="bs-stepper-circle"><i class="fal fa-clock"></i></span>
+                                    <span class="bs-stepper-label">Time</span>
+                                </button>
+                            </div>
+                            <div class="step" data-target="#info">
+                                <button type="button" class="step-trigger" role="tab" aria-controls="info" id="info-trigger">
+                                    <span class="h3 mb-1">03</span>
+                                    <span class="bs-stepper-circle"><i class="fal fa-clipboard-list-check"></i></span>
+                                    <span class="bs-stepper-label">Information</span>
+                                </button>
+                            </div>
+                            <div class="step" data-target="#payment">
+                                <button type="button" class="step-trigger" role="tab" aria-controls="payment" id="payment-trigger">
+                                    <span class="h3 mb-1">04</span>
+                                    <span class="bs-stepper-circle"><i class="fal fa-credit-card"></i></span>
+                                    <span class="bs-stepper-label">Payment</span>
+                                </button>
+                            </div>
+                            <div class="step" data-target="#confirm">
+                                <button type="button" class="step-trigger" role="tab" aria-controls="confirm" id="confirm-trigger">
+                                    <span class="h3 mb-1">05</span>
+                                    <span class="bs-stepper-circle"><i class="fal fa-check-circle"></i></span>
+                                    <span class="bs-stepper-label">Confirmation</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bs-stepper-content">
+                            <div class="container">
+                                <div id="staff" class="bs-stepper-pane fade" role="tabpanel" aria-labelledby="staff-trigger">
+                                    <!-- Staff-area start -->
+                                    <div class="staff-area pt-4">
+                                        <div class="section-title title-center mb-40">
+                                            <h3 class="title mb-20">Find Or Choose Your Staff</h3>
+                                            <div class="search-inline-form w-75 w-sm-100 mx-auto">
+                                                <form action="#">
+                                                    <div class="input-inline">
+                                                        <input type="search" class="form-control" placeholder="Enter staff name...">
+                                                        <button class="btn btn-lg btn-primary btn-gradient no-animation icon-start" type="button" aria-label="Find Now">
+                                                            <i class="far fa-search"></i>
+                                                            Find Now
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="swiper staff-slider">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="card radius-md">
+                                                        <figure class="card-img">
+                                                            <a href="javaScript:void(0)" onclick="bookingStepper.next()" target="_self" title="Image" class="lazy-container ratio ratio-2-3">
+                                                                <img class="lazyload" src="assets/images/placeholder.png" data-src="assets/images/staff/staff-1.jpg" alt="Staff">
+                                                            </a>
+                                                        </figure>
+                                                        <div class="card-details text-center p-20">
+                                                            <h5 class="card-title mb-0"><a href="javaScript:void(0)" onclick="bookingStepper.next()" target="_self" title="Staff Name">Oliver Butler</a></h5>
+                                                            <span class="card-category font-sm">user0123@gmail.com</span>
+                                                            <a href="javaScript:void(0)" class="btn-text color-primary mt-10" title="Select Staff" target="_self">Select Staff</a>
+                                                        </div>
+                                                    </div><!-- card --> 
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="card radius-md">
+                                                        <figure class="card-img">
+                                                            <a href="javaScript:void(0)" onclick="bookingStepper.next()" target="_self" title="Image" class="lazy-container ratio ratio-2-3">
+                                                                <img class="lazyload" src="assets/images/placeholder.png" data-src="assets/images/staff/staff-2.jpg" alt="Staff">
+                                                            </a>
+                                                        </figure>
+                                                        <div class="card-details text-center p-20">
+                                                            <h5 class="card-title mb-0"><a href="javaScript:void(0)" onclick="bookingStepper.next()" target="_self" title="Staff Name">Oliver Butler</a></h5>
+                                                            <span class="card-category font-sm">user0123@gmail.com</span>
+                                                            <a href="javaScript:void(0)" class="btn-text color-primary mt-10" title="Select Staff" target="_self">Select Staff</a>
+                                                        </div>
+                                                    </div><!-- card --> 
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="card radius-md">
+                                                        <figure class="card-img">
+                                                            <a href="javaScript:void(0)" onclick="bookingStepper.next()" target="_self" title="Image" class="lazy-container ratio ratio-2-3">
+                                                                <img class="lazyload" src="assets/images/placeholder.png" data-src="assets/images/staff/staff-4.jpg" alt="Staff">
+                                                            </a>
+                                                        </figure>
+                                                        <div class="card-details text-center p-20">
+                                                            <h5 class="card-title mb-0"><a href="javaScript:void(0)" onclick="bookingStepper.next()" target="_self" title="Staff Name">Oliver Butler</a></h5>
+                                                            <span class="card-category font-sm">user0123@gmail.com</span>
+                                                            <a href="javaScript:void(0)" class="btn-text color-primary mt-10" title="Select Staff" target="_self">Select Staff</a>
+                                                        </div>
+                                                    </div><!-- card --> 
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="card radius-md">
+                                                        <figure class="card-img">
+                                                            <a href="javaScript:void(0)" onclick="bookingStepper.next()" target="_self" title="Image" class="lazy-container ratio ratio-2-3">
+                                                                <img class="lazyload" src="assets/images/placeholder.png" data-src="assets/images/staff/staff-3.jpg" alt="Staff">
+                                                            </a>
+                                                        </figure>
+                                                        <div class="card-details text-center p-20">
+                                                            <h5 class="card-title mb-0"><a href="javaScript:void(0)" onclick="bookingStepper.next()" target="_self" title="Staff Name">Oliver Butler</a></h5>
+                                                            <span class="card-category font-sm">user0123@gmail.com</span>
+                                                            <a href="javaScript:void(0)" class="btn-text color-primary mt-10" title="Select Staff" target="_self">Select Staff</a>
+                                                        </div>
+                                                    </div><!-- card --> 
+                                                </div>
+                                            </div>
+                                            <div class="swiper-pagination position-static mt-10" id="staff-slider-pagination"></div>
+                                        </div>
+                                        <div class="text-center mt-10">
+                                            <a href="javaScript:void(0)" class="btn-text color-primary icon-end" onclick="bookingStepper.next()" target="_self" title="Next Step">Next Step <i class="fal fa-long-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <!-- Staff-area end -->
+                                </div>
+                                <div id="time" class="bs-stepper-pane fade" role="tabpanel" aria-labelledby="time-trigger">
+                                    <div class="calender-area pt-4">
+                                        <div class="section-title title-center mb-40">
+                                            <h3 class="title">Set Your Available Time</h3>
+                                        </div>
+                                        <div class="booking-calendar mb-30"></div>
+                                        <div class="booking-time">
+                                            <h6 class="text-center mb-20">Our Available Schedule For You</h6>
+                                            <div class="swiper booking-time-slider">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide item border radius-sm">
+                                                        <i class="fal fa-clock"></i>
+                                                        <div class="time d-flex flex-column gap-1">
+                                                            <span>10.00 am</span>
+                                                            <span>12.00 pm</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-scrollbar position-static mt-10"></div>
+                                            </div>
+                                        </div>
+                                        <div class="btn-groups justify-content-center w-100 mt-20">
+                                            <a href="javaScript:void(0)" class="btn-text color-primary icon-start" onclick="bookingStepper.previous()" target="_self" title="Next Step"><i class="fal fa-long-arrow-left"></i>Prev Step</a>
+                                            <a href="javaScript:void(0)" class="btn-text color-primary icon-end" onclick="bookingStepper.next()" target="_self" title="Next Step">Next Step <i class="fal fa-long-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="info" class="bs-stepper-pane fade" role="tabpanel" aria-labelledby="staff-trigger">
+                                    <!-- Authentication-area start -->
+                                    <div class="authentication-area pt-1">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="auth-form mt-3">
+                                                    <form>
+                                                        <div class="title mb-40">
+                                                            <span class="h3 mb-0">Sign In</span>
+                                                        </div>
+                                                        <div class="form-group mb-20">
+                                                            <label for="userName2" class="form-label color-dark">Email/Username<span class="color-red">*</span></label>
+                                                            <input type="text" name="user_name" id="userName2" class="form-control" placeholder="Username" required>
+                                                        </div>
+                                                        <div class="form-group mb-20">
+                                                            <label for="password" class="form-label color-dark">Password<span class="color-red">*</span></label>
+                                                            <div class="position-relative">
+                                                                <input type="password" name="password" id="password" class="form-control" placeholder="Enter password" required>
+                                                                <div data-toggle="#password" class="show-password-field">
+                                                                    <i class="show-icon"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="javaScript:void(0)" class="btn btn-lg btn-primary btn-gradient" title="Sign In" target="_self">Sign In</a>
+                                                        <div class="link mt-20">
+                                                            Don't have an account? <a href="signup.html">Click Here</a> to Signup
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="btn-groups mt-30">
+                                                    <a href="javaScript:void(0)" class="btn-text color-primary icon-start" onclick="bookingStepper.previous()" target="_self" title="Next Step"><i class="fal fa-long-arrow-left"></i>Prev Step</a>
+                                                    <a href="javaScript:void(0)" class="btn-text color-primary icon-end" onclick="bookingStepper.next()" target="_self" title="Next Step">Next Step <i class="fal fa-long-arrow-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="auth-form mt-3">
+                                                    <form>
+                                                        <div class="title mb-40">
+                                                            <span class="h3 mb-0">Create Account</span>
+                                                        </div>
+                                                        <div class="row gx-3">
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group mb-20">
+                                                                    <label for="firstName" class="form-label color-dark">First Name<span class="color-red">*</span></label>
+                                                                    <input type="text" name="first_name" id="firstName" class="form-control" placeholder="Enter first name" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group mb-20">
+                                                                    <label for="lastName" class="form-label color-dark">Last Name</label>
+                                                                    <input type="text" name="last_name" id="lastName" class="form-control" placeholder="Enter last name" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="form-group mb-20">
+                                                                    <label for="email2" class="form-label color-dark">Email Address<span class="color-red">*</span></label>
+                                                                    <input type="email" name="email" id="email2" class="form-control" placeholder="Your email address" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="form-group mb-20">
+                                                                    <label for="password2" class="form-label color-dark">Password<span class="color-red">*</span></label>
+                                                                    <div class="position-relative">
+                                                                        <input type="password" name="password" id="password2" class="form-control" placeholder="Enter password" required>
+                                                                        <div data-toggle="#password" class="show-password-field">
+                                                                            <i class="show-icon"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12">
+                                                                <div class="custom-checkbox mb-20">
+                                                                    <input class="input-checkbox" type="checkbox" name="checkbox" id="checkbox5" value="">
+                                                                    <label class="form-check-label" for="checkbox5">I agree with Terms & Conditions <span class="color-red">*</span></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="javaScript:void(0)" class="btn btn-lg btn-primary btn-gradient" title="Create Account" target="_self">Create Account</a>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Authentication-area end -->
+                                </div>
+                                <div id="payment" class="bs-stepper-pane fade" role="tabpanel">
+                                    <div class="payment-area pt-4">
+                                        <div class="section-title title-center mb-40">
+                                            <h3 class="title col-lg-8">Choose Your Perfect Payment method For Booking</h3>
+                                        </div>
+                                        <div class="payment-form w-50 w-sm-100 mx-auto">
+                                            <form>
+                                                <div class="form-group">
+                                                    <select id="payment-gateway" class="form-control form-select">
+                                                        <option value="Paypal" selected="">Paypal</option>
+                                                        <option value="Flutterwave">Flutterwave</option>
+                                                        <option value="Razorpay">Razorpay</option>
+                                                        <option value="Paytm">Paytm</option>
+                                                        <option value="Paystack">Paystack</option>
+                                                        <option value="Flutterwave">Flutterwave</option>
+                                                        <option value="Razorpay">Razorpay</option>
+                                                        <option value="Paytm">Paytm</option>
+                                                        <option value="Paystack">Paystack</option>
+                                                    </select>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="btn-groups justify-content-center w-100 mt-20">
+                                            <a href="javaScript:void(0)" class="btn-text color-primary icon-start" onclick="bookingStepper.previous()" target="_self" title="Next Step"><i class="fal fa-long-arrow-left"></i>Prev Step</a>
+                                            <a href="javaScript:void(0)" class="btn-text color-primary icon-end" onclick="bookingStepper.next()" target="_self" title="Next Step">Next Step <i class="fal fa-long-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="confirm" class="bs-stepper-pane fade" role="tabpanel" aria-labelledby="confirm-trigger">
+                                    <div class="confirm-area pt-4">
+                                        <div class="section-title title-center mb-40">
+                                            <h3 class="title col-lg-8">congratulations Your Booking Completed</h3>
+                                        </div>
+                                        <div class="image text-center">
+                                            <img class="lazyload" src="assets/images/placeholder.png" data-src="assets/images/book-success.png" alt="Image">
+                                        </div>
+                                        <div class="btn-groups justify-content-center w-100 mt-20">
+                                            <a href="javaScript:void(0)" class="btn-text color-primary icon-start" onclick="bookingStepper.previous()" target="_self" title="Next Step"><i class="fal fa-long-arrow-left"></i>Prev Step</a>
+                                            <a href="javaScript:void(0)" class="btn-text color-primary" title="Back to Home" target="_self" data-bs-dismiss="modal" aria-label="Close">Back to Home</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Booking Modal End -->
+
+    <!-- Jquery JS -->
+    <script src="assets/js/vendors/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/vendors/bootstrap.min.js"></script>
+    <!-- Data Tables JS -->
+    <script src="assets/js/vendors/datatables.min.js"></script>
+    <!-- Date-range Picker JS -->
+    <script src="assets/js/vendors/moment.min.js"></script>
+    <script src="assets/js/vendors/daterangepicker.js"></script>
+    <!-- Nice Select JS -->
+    <script src="assets/js/vendors/jquery.nice-select.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
+    <!-- Calendar js -->
+    <script src="assets/js/vendors/pignose.calendar.full.min.js"></script>
+    <!-- Swiper Slider JS -->
+    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+    <!-- Lazysizes -->
+    <script src="assets/js/vendors/lazysizes.min.js"></script>
+    <!-- Noui Range Slider JS -->
+    <script src="assets/js/vendors/nouislider.min.js"></script>
+    <!-- Twinmax JS -->
+    <script src="assets/js/vendors/tweenMax.min.js"></script>
+    <!-- Simple Parallax JS -->
+    <script src="assets/js/vendors/parallax.min.js"></script>
+    <!-- AOS JS -->
+    <script src="assets/js/vendors/aos.min.js"></script>
+    <!-- Mouse Hover JS -->
+    <script src="assets/js/vendors/mouse-hover-move.js"></script>
+    <!--====== Stepper js ======-->
+    <script src="assets/js/vendors/bs-stepper.min.js"></script>
+    <!-- Main script JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

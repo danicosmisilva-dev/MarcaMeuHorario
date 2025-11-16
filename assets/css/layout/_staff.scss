@@ -1,0 +1,17 @@
+/* -----------------------------------------
+    Staff CSS
+----------------------------------------- */
+.staff-area {
+    .card{
+        overflow: hidden;
+        border: 1px solid var(--border-color);
+        background: var(--bg-white);
+        transition: all .3s;
+
+        &:hover{
+            border-color: transparent;
+            border-bottom-color: var(--color-primary);
+            box-shadow: var(--shadow-md);
+        }
+    }
+}

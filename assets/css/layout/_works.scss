@@ -1,0 +1,171 @@
+/* -----------------------------------------
+    Works CSS
+----------------------------------------- */
+.works-area {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    .card {
+        z-index: 1;
+        &:hover {
+            .card-icon {
+                i {
+                    transform: scale(1.2);
+                    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+                }
+            }
+        }
+    }
+}
+
+.works-area.works-1 {
+
+    .card {
+        overflow: hidden;
+        background-color: var(--color-primary);
+        background-image: var(--gradient-1);
+        &-icon{
+            line-height: 1;
+            font-size: 60px;
+        }
+
+        .line {
+            width: 40px;
+            height: 4px;
+        }
+    }
+    $colors: (
+        "1"#87C3FF #021B79,
+        "2"#C56CD6 #3425AF,
+        "3"#15F5FD #036CDA,
+        "4"#3425AF #C56CD6,
+        "5"#036CDA #15F5FD,
+        "6"#429421 #B3EB50,
+        "7"#E74C3C #CB0A38,
+        "8"#3C8CE7 #FF512F,
+        "9"#FFAA85 #021B79,
+        "10"#3C8CE7 #021B79
+        );
+
+    @each $i, $color1, $color2 in $colors {
+        .swiper-slide:nth-child(#{$i}) {
+            .card {
+                background-color: $color1;
+                background-image: linear-gradient(-35deg, $color1 0%, $color2 100%);
+            }
+        }
+    }
+}
+
+.works-area.works-2 {
+    .card {
+        overflow: visible;
+        margin-inline-start: 20px;
+        margin-top: 40px;
+        .h1{
+            position: absolute;
+            top: -40px;
+            left: -20px;
+            line-height: 1;
+            margin: 0;
+        }
+    }
+}
+
+.works-area.works-3 {
+    .card {
+        &-icon {
+            --size: 95px;
+            width: var(--size);
+            height: var(--size);
+            display: grid;
+            place-items: center;
+            font-size: 40px;
+            color: var(--text-white);
+            background-color: var(--color-primary);
+            background-image: var(--gradient-1);
+            box-shadow: 0 15px 30px -12px rgba($color: var(--color-primary-rgb), $alpha: .5);
+
+            i {
+                display: block;
+                transform: translateZ(0);
+                backface-visibility: hidden;
+                transition-duration: 0.5s;
+            }
+        }
+
+        &:hover {
+            .card-icon {
+                i {
+                    transform: scale(1.2);
+                    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+                }
+            }
+
+            .card-title {
+                color: var(--color-primary);
+            }
+        }
+    }
+    $colors: (
+        "1"#3425AF #C56CD6,
+        "2"#036CDA #15F5FD,
+        "3"#CB0A38 #FBAEBB,
+        "4"#FF512F #F2C94C,
+        "5"#036CDA #15F5FD,
+        "6"#429421 #B3EB50,
+        "7"#E74C3C #CB0A38,
+        "8"#3C8CE7 #FF512F,
+        "9"#FFAA85 #021B79,
+        "10"#3C8CE7 #021B79
+        );
+
+    @each $i, $color1, $color2 in $colors {
+        .item-#{$i} {
+            .card {
+                &-icon {
+                    background-color: $color1;
+                    background-image: linear-gradient(-35deg, $color1 0%, $color2 100%);
+                    box-shadow: 0 15px 30px -12px rgba($color: $color1, $alpha: .7);
+                }
+                &:hover{
+                    .card-title {
+                        color: $color1;
+                    }
+                }
+            }
+        }
+    }
+
+    .shape {
+        img {
+            position: absolute;
+            z-index: -1;
+
+            &.shape-1 {
+                top: 16%;
+                left: 12%;
+                animation: moveLeftRight 10s linear infinite;
+            }
+
+            &.shape-2 {
+                top: 30%;
+                left: 32%;
+                animation: moveUpDown 5s linear infinite;
+            }
+
+            &.shape-3 {
+                top: 25%;
+                right: 30%;
+                animation: moveLeftRight 10s linear infinite;
+            }
+
+            &.shape-4 {
+                top: 12%;
+                right: 16%;
+                animation: moveUpDown 8s linear infinite;
+            }
+        }
+    }
+}

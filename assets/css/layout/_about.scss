@@ -1,0 +1,241 @@
+/* -----------------------------------------
+    About CSS
+----------------------------------------- */
+.about-area {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background-size: cover;
+    background-position: center top;
+
+    .card {
+        background-color: transparent;
+        .card-text {
+            flex: auto;
+        }
+    }
+
+    .card-icon {
+        --size: 60px;
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: var(--size);
+        height: var(--size);
+        font-size: 32px;
+        color: var(--text-white);
+        background-color: var(--color-primary);
+    }
+
+    .image {
+        position: relative;
+
+        .absolute-text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin-inline-start: auto;
+            margin-inline-end: calc(100% / 16);
+            width: 180px;
+            height: 240px;
+            padding: 15px;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            outline: 2px dashed var(--color-white);
+            outline-offset: -12px;
+        }
+    }
+
+    .info-list {
+        .card {
+            max-width: 400px;
+            overflow: hidden;
+            z-index: 1;
+            flex-direction: row;
+            gap: 16px;
+        }
+    }
+
+}
+.about-area.about-1 {
+    .info-list {
+        .card-icon i{
+            color: var(--color-black);
+        }
+        .item:nth-child(odd) {
+            border-inline-end: 3px solid var(--border-color);
+
+            @media #{$sm} {
+                border: 0;
+            }
+        }
+    } 
+}
+
+.about-area.about-2 {
+    .blockquote {
+        font-size: inherit;
+        padding: 20px;
+        border-radius: 0 100px 100px 0;
+        color: var(--text-light);
+        font-style: italic;
+    }
+    p, .video-btn-text span {
+        color: var(--text-light);
+    }
+    .info-list {
+        $colors: (
+            "1"#6B76FF,
+            "2"#FAB940,
+            "3"#FF7C41,
+            "4"#00DDC1,
+            "5"#499C21,
+            "6"#F1C40F,
+            "7"#E67E22,
+            "8"#E74C3C,
+            "9"#FFAA85,
+            "10"#3C8CE7);
+
+        @each $i,
+        $color in $colors {
+            .item:nth-child(#{$i}) {
+                .card-icon {
+                    background-color: rgba($color, .08);
+                    color: $color;
+                }
+            }
+        }
+    }
+}
+.about-area.about-3 {}
+
+.about-area.about-4 {
+    .info-list {
+        .card {
+            max-width: 100%;
+            gap: 0;
+
+            .card-icon {
+                position: relative;
+                overflow: hidden;
+                --size: auto;
+                padding: 20px 0;
+                padding-inline-start: 20px;
+                background-color: transparent;
+                justify-content: start;
+                gap: 15px;
+
+                &::before{
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin-inline-start: 0;
+                    margin-inline-end: auto;
+                    width: calc(100% / 1.35);
+                    border: 2px solid var(--bg-dark);
+                    z-index: -2;
+                }
+                &::after{
+                    position: absolute;
+                    content: '';
+                    top: 10px;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin-inline-start: 40px;
+                    margin-inline-end: auto;
+                    width: 100%;
+                    height: calc(100% - 20px);
+                    background-color: var(--color-primary);
+                    z-index: -1;
+                }
+
+                i{
+                    --size: 60px;
+                    flex: 0 0 auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: var(--size);
+                    height: var(--size);
+                    color: var(--color-primary);
+                    background-color: var(--bg-white);
+                    box-shadow: var(--shadow-md);
+                }
+
+                @media #{$lg} {
+                    gap: 10px;
+                    padding-inline-start: 15px;
+                    i{
+                        --size: 40px;
+                    }
+                }
+            }
+        }
+    }
+    .author-img{
+        width: 50px;
+    }
+    .btn-icon-text {
+        --size: 50px;
+        i{
+            border-radius: 0;
+        }
+    }
+}
+.about-area.about-5 {
+    .info-list {
+        .card {
+            max-width: 100%;
+            flex-wrap: wrap;
+            .card-icon {
+                --size: 100px;
+                position: relative;
+                background-color: transparent;
+                color: var(--text-dark);
+                font-size: 52px;
+                &::after {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    mask: url(../images/circle-shape-2.svg) no-repeat center/contain;
+                    -webkit-mask: url(../images/circle-shape-2.svg) no-repeat center/contain;
+                    background-color: rgba($color: var(--color-primary-rgb), $alpha: .2);
+                }
+            }
+        }
+        $colors: (
+        "1"#21C4DF,
+        "2"#FFB228,
+        "3"#00D5AE,
+        "4"#FF5195,
+        "5"#6B76FF,
+        "6"#F59872,
+        "7"#E74C3C,
+        "8"#3C8CE7,
+        "9"#FFAA85,
+        "10"#3C8CE7);
+
+    @each $i,
+    $color in $colors {
+        .item:nth-child(#{$i}) {
+            .card {
+                &-icon::after {
+                    background-color: rgba($color: $color, $alpha: .2);
+                }
+            }
+        }
+    }
+    }
+}

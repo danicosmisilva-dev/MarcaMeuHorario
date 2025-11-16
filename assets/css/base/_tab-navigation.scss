@@ -1,0 +1,128 @@
+/* -----------------------------------------
+    Nav Tabs CSS
+----------------------------------------- */
+.tabs-navigation {
+    &::-webkit-scrollbar {
+        height: 8px;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background-color: var(--bg-light);
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        border-radius: 30px;
+        background: rgba($color: var(--color-dark-rgb), $alpha: .2);
+    }
+    .nav {
+        display: inline-flex;
+        border: none;
+        gap: 20px;
+        justify-content: center;
+        z-index: 1;
+        position: relative;
+        overflow: hidden;
+
+        li{
+            flex: 0 0 auto;
+        }
+        
+        .nav-link {
+            color: var(--text-dark);
+            font-weight: var(--font-medium);
+            margin: 0;
+            z-index: 999;
+            border: 0;
+            border: 1px solid var(--border-color-2);
+            cursor: pointer;
+
+            &:is(.active){
+                color: var(--text-white);
+                background-color: var(--color-primary);
+                border-radius: 0;
+            }
+        }
+        
+        &[data-hover="fancyHover"] {
+            .nav-link:is(.active, :hover){
+                color: var(--text-dark);
+                background: transparent !important;
+                border-color: var(--color-primary);
+            }
+            .nav-item{
+                z-index: 2;
+                &:is(.active) {
+                    .nav-link{
+                        color: var(--text-white);
+                        background-color: var(--color-primary) !important;
+                        background-image: var(--gradient-1) !important;
+                        border-color: transparent;
+                        &:is(:hover){
+                            background: transparent !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .target {
+        position: absolute;
+        background-color: var(--color-primary);
+        background-image: var(--gradient-1);
+        border: 1px solid var(--color-primary);
+        z-index: 1;
+        transform: translateX(-50%);
+        transition: all .3s;
+    }
+}
+
+.tabs-navigation-2 {
+    border-radius: 10px 10px 0 0;
+    .nav {
+        display: inline-flex;
+        gap: 0;
+        .nav-link{
+            color: var(--text-dark);
+            background: transparent;
+            padding: 12px 30px;
+            margin: 0;
+            border-radius: 10px 10px 0 0 !important;
+            border-color: transparent;
+
+            &:hover{
+                box-shadow: none !important;
+            }
+        }
+    }
+}
+
+.tabs-navigation-3 {
+    .nav {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        gap: 0;
+        .nav-link{
+            color: var(--text-dark);
+            background: transparent;
+            padding: 12px 20px;
+            margin: 0;
+            border-radius:0 0 10px 10px !important;
+            border-color: transparent;
+
+            &:hover{
+                box-shadow: none !important;
+            }
+        }
+    }
+}
+.tab-pane.fade {
+    transition: all .3s;
+    transform: translateY(.5rem);
+}
+.tab-pane.fade.show {
+    transform: translateY(0rem);
+}
+
+.tab-pane.slide.show {
+    animation: slideUp 1 .4s;
+}

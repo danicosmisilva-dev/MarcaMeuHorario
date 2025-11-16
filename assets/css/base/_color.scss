@@ -1,0 +1,129 @@
+/* -----------------------------------------
+	Color CSS
+----------------------------------------- */
+/* Theme Color CSS */
+.theme-color-1{
+    --color-primary: #FF0037;
+    --color-primary-rgb: 255, 0, 55;
+}
+.theme-color-2{
+    --color-primary: #0072FF;
+    --color-secondary: #00C6FF;
+    --color-primary-rgb: 0, 114, 255;
+    // --font-heading: 'Josefin Sans', sans-serif;
+    --gradient-1: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+}
+.theme-color-3{
+    --color-primary: #FF512F;
+    --color-secondary: #F09819;
+    --color-primary-rgb: 255, 81, 47;
+    // --font-heading: 'Josefin Sans', sans-serif;
+    --gradient-1: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+}
+/* Color CSS */
+.color-primary {
+    color: var(--color-primary) !important;
+}
+
+.color-white {
+    color: var(--text-white) !important;
+}
+
+.color-light {
+    color: var(--text-light) !important;
+}
+
+.color-dark {
+    color: var(--color-dark) !important;
+}
+
+.color-medium {
+    color: var(--text-medium) !important;
+}
+
+.color-blue {
+    color: var(--color-blue) !important;
+}
+
+.color-green {
+    color: var(--color-green) !important;
+}
+
+.color-red {
+    color: var(--color-red) !important;
+}
+
+.color-yellow {
+    color: var(--color-yellow) !important;
+}
+
+.color-purple {
+    color: var(--color-primary) !important;
+}
+
+.color-orange {
+    color: var(--color-orange) !important;
+}
+
+.bg-primary {
+    background-color: var(--color-primary) !important;
+}
+.bg-primary-light {
+    --bg-primary-light: rgba(var(--color-primary-rgb), .05);
+    background-color: var(--bg-primary-light) !important;
+}
+.bg-secondary {
+    background-color: var(--color-secondary) !important;
+}
+.bg-secondary-light {
+    --bg-secondary-light: rgba(var(--color-secondary-rgb), .05);
+    background-color: var(--bg-secondary-light) !important;
+}
+.bg-white {
+    background-color: var(--bg-white) !important;
+}
+.bg-light {
+    background-color: var(--bg-1) !important;
+}
+.bg-light-2 {
+    background-color: var(--bg-2) !important;
+}
+.bg-dark {
+    background-color: var(--color-dark) !important;
+}
+.bg-gradient {
+    background-image: var(--gradient-1) !important;
+}
+.border-primary {
+    border-color: var(--color-primary) !important;
+}
+.text-gradient{
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.stroke-gradient {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: var(--gradient-1);
+    -webkit-text-stroke-width: 1px;
+}
+.bg-none{
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+.fill-primary {
+    fill: var(--color-primary) !important;
+}
+.stroke-primary {
+    stroke: var(--color-primary) !important;
+}
+.fill-primary-light {
+    fill: var(--color-primary) !important;
+    filter: contrast(30%);
+}
+.fill-dark {
+    fill: var(--color-primary) !important;
+    filter: brightness(50%);
+}
