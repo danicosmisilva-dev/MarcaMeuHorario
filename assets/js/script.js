@@ -75,12 +75,12 @@
             Navlink active class
         ============================================*/
     var a = $("#mainMenu .nav-link"),
-        c = window.location;
+        c = window.location.href;
 
     for (var i = 0; i < a.length; i++) {
         const el = a[i];
 
-        if (el.href == c) {
+        if (el && el.href && el.href === c) {
             el.classList.add("active");
         }
     }
@@ -435,15 +435,22 @@
     $(document).ready(function () {
 
         if ($(".swiper").length) {
-            var mySwiper = document.querySelector(".swiper").swiper;
+            var swiperElement = document.querySelector(".swiper");
+            var mySwiper = swiperElement && swiperElement.swiper;
 
-            $(".swiper").mouseenter(function () {
-                mySwiper.autoplay.stop();
-            });
+            if (mySwiper) {
+                $(".swiper").mouseenter(function () {
+                    if (mySwiper && mySwiper.autoplay) {
+                        mySwiper.autoplay.stop();
+                    }
+                });
 
-            $(".swiper").mouseleave(function () {
-                mySwiper.autoplay.start();
-            });
+                $(".swiper").mouseleave(function () {
+                    if (mySwiper && mySwiper.autoplay) {
+                        mySwiper.autoplay.start();
+                    }
+                });
+            }
         }
     });
 
