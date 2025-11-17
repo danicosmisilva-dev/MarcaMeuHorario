@@ -1,3 +1,4 @@
+window.initTheme = function() {
 !(function ($) {
     "use strict";
 
@@ -509,6 +510,31 @@
         init: onInitBookingCalendar
     });
 
+    // Re-initialize pignose-calendar when booking modal is shown.
+    // This is a fallback for cases where Angular timing prevents the calendar
+    // from initializing on first load.
+    $('.booking-modal').on('shown.bs.modal', function () {
+        try {
+            var $ = window.jQuery || window.$;
+            if ($ && typeof $.fn !== 'undefined' && typeof $.fn.pignoseCalendar === 'function') {
+                console.log('[pignose] booking modal shown — scheduling re-init');
+                // delay slightly to ensure Bootstrap has finished rendering the modal
+                setTimeout(function () {
+                    $('.booking-calendar').each(function () {
+                        try {
+                            // Re-call pignoseCalendar to ensure it's initialized for this element
+                            $(this).pignoseCalendar({ init: onInitBookingCalendar });
+                        } catch (e) {
+                            console.warn('pignose re-init failed for element', this, e);
+                        }
+                    });
+                }, 50);
+            }
+        } catch (err) {
+            console.warn('pignose re-init on modal shown failed', err);
+        }
+    });
+
 
     /*============================================
         Date-range Picker
@@ -785,8 +811,23 @@ $(window).on("load", function () {
     if ($("#preLoader")) {
         setTimeout(() => {
             aosAnimation()
+            // refresh AOS shortly after init so dynamically created/modified elements (e.g. Swiper slides)
+            // are detected and animated correctly
+            setTimeout(function () {
+                try {
+                    AOS.refresh();
+                } catch (e) {
+                    // ignore if AOS is not available
+                }
+            }, 100);
         }, delay);
     } else {
         aosAnimation();
+        try {
+            AOS.refresh();
+        } catch (e) {
+            // ignore
+        }
     }
 })
+};

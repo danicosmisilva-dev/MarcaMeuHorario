@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BookingService } from '../services/booking.service';
 
 @Component({
   selector: 'app-works-area',
@@ -7,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './works-area.css',
 })
 export class WorksArea {
+  constructor(public booking: BookingService) {}
 
 }
