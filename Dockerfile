@@ -1,4 +1,4 @@
-# Multi-stage Dockerfile for building and serving the Angular app with nginx
+# Multi-stage Dockerfile for building and serving the Angular app without nginx
 ### Build stage
 FROM node:20-alpine AS build
 WORKDIR /app
@@ -11,19 +11,15 @@ RUN npm ci --silent
 COPY . .
 RUN npm run build -- --configuration production
 
-### Production stage (nginx)
-FROM nginx:1.23-alpine
-LABEL org.opencontainers.image.source="https://github.com/danicosmisilva-dev/MarcaMeuHorario"
+### Minimal runtime stage using a simple Node static server
+FROM node:20-alpine
+WORKDIR /app
 
-# Remove default nginx website
-RUN rm -rf /usr/share/nginx/html/*
+# Lightweight static file server for the built assets
+RUN npm install -g http-server@14
 
 # Copy compiled app from the build stage
-COPY --from=build /app/dist/marca-meu-horario /usr/share/nginx/html
+COPY --from=build /app/dist/marca-meu-horario ./dist
 
-# Copy custom nginx configuration (SPA fallback)
-COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
-
-EXPOSE 80
-STOPSIGNAL SIGTERM
-CMD ["nginx", "-g", "daemon off;"]
+EXPOSE 8080
+CMD ["http-server", "./dist", "-p", "8080", "-a", "0.0.0.0"]
