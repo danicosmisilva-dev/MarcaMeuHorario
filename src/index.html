@@ -6,6 +6,17 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script>
+    // Load environment variables from window or set defaults
+    // In production, these should be injected by your deployment platform
+    window.env_FIREBASE_API_KEY = window.env_FIREBASE_API_KEY || '';
+    window.env_FIREBASE_AUTH_DOMAIN = window.env_FIREBASE_AUTH_DOMAIN || '';
+    window.env_FIREBASE_PROJECT_ID = window.env_FIREBASE_PROJECT_ID || '';
+    window.env_FIREBASE_STORAGE_BUCKET = window.env_FIREBASE_STORAGE_BUCKET || '';
+    window.env_FIREBASE_MESSAGING_SENDER_ID = window.env_FIREBASE_MESSAGING_SENDER_ID || '';
+    window.env_FIREBASE_APP_ID = window.env_FIREBASE_APP_ID || '';
+    window.env_FIREBASE_MEASUREMENT_ID = window.env_FIREBASE_MEASUREMENT_ID || '';
+  </script>
 </head>
 <body>
   <app-root></app-root>

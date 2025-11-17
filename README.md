@@ -2,6 +2,21 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.10.
 
+## 🔒 Environment Variables (Important!)
+
+This project uses environment variables for sensitive configuration. Before running locally or deploying:
+
+1. **Copy the template:**
+   ```bash
+   cp .env.example .env.local
+   ```
+
+2. **Fill in your Firebase credentials** in `.env.local`
+
+3. **Never commit `.env.local`** - it's already in `.gitignore`
+
+See [ENVIRONMENT_VARIABLES.md](./ENVIRONMENT_VARIABLES.md) for complete setup instructions.
+
 ## Development server
 
 To start a local development server, run:

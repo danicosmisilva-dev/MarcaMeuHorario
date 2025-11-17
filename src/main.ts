@@ -2,14 +2,18 @@ import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
 import { App } from './app/app';
 
-import { initializeApp } from "firebase/app";
-
-import { getAnalytics } from "firebase/analytics";
-
+import { initializeApp } from 'firebase/app';
+import { getAnalytics } from 'firebase/analytics';
 import { environment } from './environments/environment';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 bootstrapApplication(App, appConfig)
+  .then(() => {
+    AOS.init({ duration: 700, once: true });
+  })
   .catch((err) => console.error(err));
 // Initialize Firebase
 
