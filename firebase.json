@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/marca-meu-horario",
+    "public": "dist/marca-meu-horario/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
