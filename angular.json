@@ -38,7 +38,7 @@
               "assets/js/vendors/bootstrap.min.js",
               "assets/js/vendors/swiper-bundle.min.js",
               "assets/js/vendors/aos.min.js",
-              "assets/js/vendors/moment.min.js",
+              "assets/js/vendors/moment-with-locales.min.js",
               "assets/js/vendors/daterangepicker.js",
               "assets/js/vendors/jquery.nice-select.min.js",
               "assets/js/vendors/nouislider.min.js",

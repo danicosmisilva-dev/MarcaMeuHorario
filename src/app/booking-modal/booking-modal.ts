@@ -28,8 +28,14 @@ export class BookingModal implements AfterViewInit {
     try {
       const $ = (window as any).$ || (window as any).jQuery;
       if ($ && typeof $.fn !== 'undefined' && typeof $.fn.pignoseCalendar === 'function') {
+        // Force Moment locale to pt-BR before initializing the calendar
+        const moment = (window as any).moment;
+        if (moment?.locale) {
+          moment.locale('pt-br');
+        }
         // provide a minimal init callback that wires booking time clicks to stepper
         $('.booking-calendar').pignoseCalendar({
+          lang: 'pt-br',
           init: function () {
             $('.booking-time .item').off('click.pignoseInit').on('click.pignoseInit', function () {
               try {
