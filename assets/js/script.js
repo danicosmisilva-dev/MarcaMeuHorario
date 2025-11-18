@@ -506,7 +506,12 @@ window.initTheme = function() {
             bookingStepper.next();
         })
     }
+    // Ensure moment uses Brazilian Portuguese for calendar labels
+    if (window.moment && typeof window.moment.locale === 'function') {
+        window.moment.locale('pt-br');
+    }
     $('.booking-calendar').pignoseCalendar({
+        lang: 'pt-br',
         init: onInitBookingCalendar
     });
 
@@ -523,7 +528,7 @@ window.initTheme = function() {
                     $('.booking-calendar').each(function () {
                         try {
                             // Re-call pignoseCalendar to ensure it's initialized for this element
-                            $(this).pignoseCalendar({ init: onInitBookingCalendar });
+                            $(this).pignoseCalendar({ lang: 'pt-br', init: onInitBookingCalendar });
                         } catch (e) {
                             console.warn('pignose re-init failed for element', this, e);
                         }
